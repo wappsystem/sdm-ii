@@ -51,8 +51,8 @@
 
         "sdm-ii-q-psqi-data":		            {url:"$A/modules/psqi-data.html",Table:"sdm-ii-q-psqi",form_module:"sdm-ii-q-psqi-form"},
         "sdm-ii-q-psqi-form":		            {url:"$A/modules/psqi-form.html",Table:"sdm-ii-q-pre-psqi"},
-        "sdm-ii-q-phq9-data":		            {url:"$A/modules/phq9-data.html",Table:"sdm-ii-q-phq9",form_module:"sdm-ii-q-phq9-form"},
-        "sdm-ii-q-phq9-form":		            {url:"$A/modules/phq9-form.html",Table:"sdm-ii-q-pre-phq9"},
+        "sdm-ii-q-phq9-data":		            {url:"$A/modules/phq-data.html",Table:"sdm-ii-q-phq9",form_module:"sdm-ii-q-phq9-form"},
+        "sdm-ii-q-phq9-form":		            {url:"$A/modules/phq-form.html",Table:"sdm-ii-q-pre-phq9"},
         "sdm-ii-q-isi-data":		            {url:"$A/modules/isi-data.html",Table:"sdm-ii-q-isi",form_module:"sdm-ii-q-isi-form"},
         "sdm-ii-q-isi-form":		            {url:"$A/modules/isi-form.html",Table:"sdm-ii-q-pre-isi"},
         "sdm-ii-q-me-data":		            {url:"$A/modules/me-data.html",Table:"sdm-ii-q-me",form_module:"sdm-ii-q-me-form"},
@@ -79,8 +79,22 @@
         "sdm-ii-m-ftt-data":		            {url:"$A/modules/neurocog/ftt-data.html",Table:"sdm-ii-m-ftt",form_module:"sdm-ii-m-ftt-form"},
         "sdm-ii-m-ftt-form":		            {url:"$A/modules/neurocog/ftt-form.html",Table:"sdm-ii-m-pre-ftt"},
 
-        "sdm-ii-m-word-pair-set-1":	    {url:"$A//modules/word-pairs/Set1_Morning_Wordpairs.html"},
-        "sdm-ii-m-word-pair-set-2":	    {url:"$A/modules/word-pairs/Set2_morning_wordpairs"},
+        "sdm-ii-e-wordpair-set1-practice":	{url:"$A//modules/word-pairs/evening-wordpairs-set1-practice.html"},
+        "sdm-ii-e-wordpair-set1-trial1":	    {url:"$A/modules/word-pairs/evening-wordpairs-set1-trial1.html"},
+        "sdm-ii-e-wordpair-set1-trial2":	    {url:"$A/modules/word-pairs/evening-wordpairs-set1-trial2.html"},
+        "sdm-ii-e-wordpair-set1-trial3":	    {url:"$A/modules/word-pairs/evening-wordpairs-set1-trial3.html"},
+        "sdm-ii-e-wordpair-set1-trial4":	    {url:"$A/modules/word-pairs/evening-wordpairs-set1-trial4.html"},
+
+        "sdm-ii-e-wordpair-set2-practice":	{url:"$A//modules/word-pairs/evening-wordpairs-set2-practice.html"},
+        "sdm-ii-e-wordpair-set2-trial1":	    {url:"$A/modules/word-pairs/evening-wordpairs-set2-trial1.html"},
+        "sdm-ii-e-wordpair-set2-trial2":	    {url:"$A/modules/word-pairs/evening-wordpairs-set2-trial2.html"},
+        "sdm-ii-e-wordpair-set2-trial3":	    {url:"$A/modules/word-pairs/evening-wordpairs-set2-trial3.html"},
+        "sdm-ii-e-wordpair-set2-trial4":	    {url:"$A/modules/word-pairs/evening-wordpairs-set2-trial4.html"},
+
+
+
+        "sdm-ii-m-wordpair-set1":	            {url:"$A//modules/word-pairs/morning-wordpairs-set1.html"},
+        "sdm-ii-m-wordpair-set2":	            {url:"$A/modules/word-pairs/morning-wordpairs-set2.html"},
    }
     for(m in modules){$vm.module_list[m]=modules[m];}
 })();

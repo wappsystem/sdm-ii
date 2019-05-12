@@ -1,19 +1,32 @@
-<section>
-    <div id=toolbar__ID>
-          <a id=back__ID>Back</a> <a id=start__ID>Start</a> <a id=stop__ID>Stop</a>
-    </div>
-    <img id=img__ID />
-</section>
-<script>
-    function F__ID(){
-        //-------------------------------------
-        VmInclude:__PARTS__/toolbar/back.js
-        //-------------------------------------
+<html>
+    <head>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/v4-shims.css" />
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.2.1.min.js"></script>
+        <script>$vm={};$VmAPI={};$vm.ver=[0.52,0.52];$vm.reload='';</script>
+        <script src="https://vm.vmiis.com/distribution/vm.js"></script>
+    </head>
+    <body>
+        <div style="padding:6px">
+            <button type=button id=start__ID class='btn btn-secondary'>Start</button> <button id=pause__ID class='btn btn-secondary'>Pause</button> <button type=button id=stop__ID class='btn btn-secondary'>Stop</button>
+        </div>
+        <div>
+            <div style='margin-left:auto;margin-right:auto;width:960px;height:720px;' >
+                <img id=img__ID >
+            <div>
+        </div>
+    </body>
+    <script>
+            document.title="Word Pairs";
+
+       //-------------------------------------
         var img_array=[
-          {src:'__CURRENT_PATH__/../../../images/Set1/Practice/Set1Slide1.JPG',time:5000},
-          {src:'__CURRENT_PATH__/../../../images/Set1/Practice/Set1Slide2.JPG',time:5000},
-          {src:'__CURRENT_PATH__/../../../images/Set1/Practice/Set1Slide3.JPG',time:5000},
-          {src:'__CURRENT_PATH__/../../../images/Set1/Practice/Set1Slide4.JPG',time:5000},
+          {src:'__CURRENT_PATH__/../images/Set1/Practice/Set1Slide1.JPG',time:5000},
+          {src:'__CURRENT_PATH__/../images/Set1/Practice/Set1Slide2.JPG',time:5000},
+          {src:'__CURRENT_PATH__/../images/Set1/Practice/Set1Slide3.JPG',time:5000},
+          {src:'__CURRENT_PATH__/../images/Set1/Practice/Set1Slide4.JPG',time:5000},
         ]
         //----------------------------------
        /* var random_array=function(array){
@@ -68,11 +81,6 @@
                 I++;
             }
         }
-    }
-</script>
-<style>
-    VmInclude:__PARTS__/style/default.css
-    #img__ID {
-    height:1000px!important;
-    }
-</style>
+	
+    </script>
+</html>
