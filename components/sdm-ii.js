@@ -22,6 +22,10 @@
         "sdm-ii-g-date-form":		                {url:"$A/modules/date-form.html",Table:"sdm-ii-g-date"},
         "sdm-ii-g-anthropometry-data":		                        {url:"$A/modules/anthropometry-data.html",Table:"sdm-ii-g-anthropometry",form_module:"sdm-ii-g-anthropometry-form"},
         "sdm-ii-g-anthropometry-form":		                {url:"$A/modules/anthropometry-form.html",Table:"sdm-ii-g-anthropometry"},
+        "sdm-ii-g-wtar-data":		                        {url:"$A/modules/wtar-data.html",Table:"sdm-ii-g-wtar",form_module:"sdm-ii-g-wtar-form"},
+        "sdm-ii-g-wtar-form":		                {url:"$A/modules/wtar-form.html",Table:"sdm-ii-g-wtar"},
+        "sdm-ii-g-mmse-data":		                        {url:"$A/modules/mmse-data.html",Table:"sdm-ii-g-mmse",form_module:"sdm-ii-g-mmse-form"},
+        "sdm-ii-g-mmse-form":		                {url:"$A/modules/mmse-form.html",Table:"sdm-ii-g-mmse"},
 
         "sdm-ii-g-wtar-data":		            {url:"$A/modules/wtar-data.html",Table:"sdm-ii-g-wtar",form_module:"sdm-ii-g-wtar-form"},
         "sdm-ii-g-wtar-form":		            {url:"$A/modules/wtar-form.html",Table:"sdm-ii-g-wtar"},
@@ -63,8 +67,8 @@
         "sdm-ii-q-ess-form":		            {url:"$A/modules/ess-form.html",Table:"sdm-ii-q-pre-ess",task_name:"Epworth Sleepiness Scale"},
         "sdm-ii-q-dass-data":		            {url:"$A/modules/dass-data.html",Table:"sdm-ii-q-dass",form_module:"sdm-ii-q-dass-form"},
         "sdm-ii-q-dass-form":		            {url:"$A/modules/dass-form.html",Table:"sdm-ii-q-pre-dass",task_name:"Depression, Anxiety, Stress Scale (DASS-21)"},
-        "sdm-ii-q-kss-data":		            {url:"$A/modules/kss-data.html",Table:"sdm-ii-e-kss",form_module:"sdm-ii-e-kss-form"},
-        "sdm-ii-q-kss-form":		            {url:"$A/modules/kss-form.html",Table:"sdm-ii-e-pre-kss",task_name:"Karolinska Sleepiness Scale (KSS)"},
+        "sdm-ii-e-kss-data":		            {url:"$A/modules/kss-data.html",Table:"sdm-ii-e-kss",form_module:"sdm-ii-e-kss-form"},
+        "sdm-ii-e-kss-form":		            {url:"$A/modules/kss-form.html",Table:"sdm-ii-e-pre-kss",task_name:"Karolinska Sleepiness Scale (KSS)"},
 
         "sdm-ii-e-pvt-data":		            {url:"$A/modules/pvt-data.html",Table:"sdm-ii-e-pvt",form_module:"sdm-ii-e-pvt-form"},
         "sdm-ii-e-pvt-form":		            {url:"$A/modules/pvt-form.html",Table:"sdm-ii-e-pre-pvt"},
@@ -84,12 +88,14 @@
         "sdm-ii-e-wordpair-set1-trial2":	    {url:"$A/modules/word-pairs/evening-wordpairs-set1-trial2.html"},
         "sdm-ii-e-wordpair-set1-trial3":	    {url:"$A/modules/word-pairs/evening-wordpairs-set1-trial3.html"},
         "sdm-ii-e-wordpair-set1-trial4":	    {url:"$A/modules/word-pairs/evening-wordpairs-set1-trial4.html"},
+        "sdm-ii-e-wordpair-set1-trial5":	    {url:"$A/modules/word-pairs/evening-wordpairs-set1-trial5.html"},
 
         "sdm-ii-e-wordpair-set2-practice":	{url:"$A//modules/word-pairs/evening-wordpairs-set2-practice.html"},
         "sdm-ii-e-wordpair-set2-trial1":	    {url:"$A/modules/word-pairs/evening-wordpairs-set2-trial1.html"},
         "sdm-ii-e-wordpair-set2-trial2":	    {url:"$A/modules/word-pairs/evening-wordpairs-set2-trial2.html"},
         "sdm-ii-e-wordpair-set2-trial3":	    {url:"$A/modules/word-pairs/evening-wordpairs-set2-trial3.html"},
         "sdm-ii-e-wordpair-set2-trial4":	    {url:"$A/modules/word-pairs/evening-wordpairs-set2-trial4.html"},
+        "sdm-ii-e-wordpair-set2-trial5":	    {url:"$A/modules/word-pairs/evening-wordpairs-set2-trial5.html"},
 
 
 
