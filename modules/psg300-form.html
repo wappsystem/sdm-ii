@@ -31,347 +31,478 @@
                                 <hr>
                             </div>
                             <!-- form group -->
-                            <button type="submit" id="submit__ID" class="btn btn-primary btn-lg">Submit</button>
-                            <hr>
                             <div class="row px-4">
                                 <div class='col'>
-                                    <span>File</span>
+                                    <span>File Upload</span>
                                     <div class="form-control">
                                         <u style='cursor:pointer' id=link_File_Name__ID></u>
-                                        <br>
-                                        <input type="file" name=File_Name style="margin-top:6px" /> &nbsp&nbsp&nbsp
-                                        <button type="button" id=x_File_Name__ID>Remove</button>
+                                        <input type="file" name=File_Name style="margin-top:6px" class='btn btn-primary btn-lg' /><br />
+                                        <br />
+                                        <button id=x_File_Name__ID type="button" class='btn btn-primary btn-lg' onClick="this.form.reset()">Remove</button>
+                                        <button id='submit__ID' type='submit' class='btn btn-primary btn-lg'>Submit</button>
                                     </div>
                                 </div>
                             </div>
                             <hr>
-                            <div class="row px-4">
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Date of Birth</span><input class='form-control' type='text' name='Date_of_Birth' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Gender</span><input class='form-control' type='text' name='Gender' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >MRN</span><input class='form-control' type='text' name='MRN' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Study Date</span><input class='form-control' type='text' name='Study_Date' /></label></div>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>CMS Patient ID</span> <input type=text class=form-control name=CMS_Patient_ID> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Date of Birth</span> <input type=text class=form-control name=Date_of_Birth> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Sex</span> <input type=text class=form-control name=Sex> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Wt kg</span> <input type=text class=form-control name=Wt_kg> </label> </div>
                             </div>
                             <hr>
-                            <div class="row px-4">
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Study Start Time</span><input class='form-control' type='text' name='Study_Start_Time' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Study End Time</span><input class='form-control' type='text' name='Study_End_Time' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Time in Bed (min)</span><input class='form-control' type='text' name='Time_in_Bed_min' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Sleep Latency (min)</span><input class='form-control' type='text' name='Sleep_Latency_min' /></label></div>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Ht cm</span> <input type=text class=form-control name=Ht_cm> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>BMI</span> <input type=text class=form-control name=BMI> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Neck circumference cm</span> <input type=text class=form-control name=Neck_circumference__cm> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>ESS</span> <input type=text class=form-control name=ESS> </label> </div>
                             </div>
                             <hr>
-                            <div class="row px-4">
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >REM Latency (min)</span><input class='form-control' type='text' name='REM_Latency_min' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Sleep Efficiency (%)</span><input class='form-control' type='text' name='Sleep_Efficiency_pct' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Total Time Awake During Sleep Period (min)</span><input class='form-control' type='text' name='Total_Time_Awake_During_Sleep_Period_min' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Total Sleep Time (min)</span><input class='form-control' type='text' name='Total_Sleep_Time_min' /></label></div>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Study Date</span> <input type=text class=form-control name=Study_Date> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Recording Start Time</span> <input type=text class=form-control name=Recording_Start_Time> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Recording End Time</span> <input type=text class=form-control name=Recording_End_Time> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Lights Out Time</span> <input type=text class=form-control name=Lights_Out_Time> </label> </div>
                             </div>
                             <hr>
-                            <div class="row px-4">
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >NREM (min)</span><input class='form-control' type='text' name='NREM_min' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >NREM %</span><input class='form-control' type='text' name='NREM_pct' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >REM (min)</span><input class='form-control' type='text' name='REM_min' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >REM %</span><input class='form-control' type='text' name='REM_pct' /></label></div>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Lights On Time</span> <input type=text class=form-control name=Lights_On_Time> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Sleep Onset Time</span> <input type=text class=form-control name=Sleep_Onset_Time> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Sleep Offset Time</span> <input type=text class=form-control name=Sleep_Offset_Time> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Time in Bed min</span> <input type=text class=form-control name=Time_in_Bed_min> </label> </div>
                             </div>
                             <hr>
-                            <div class="row px-4">
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Stage 1 (min)</span><input class='form-control' type='text' name='Stage_1_min' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Stage 1 %</span><input class='form-control' type='text' name='Stage_1_pct' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Stage 2 (min)</span><input class='form-control' type='text' name='Stage_2_min' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Stage 2 %</span><input class='form-control' type='text' name='Stage_2_pct' /></label></div>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Sleep Period Time min</span> <input type=text class=form-control name=Sleep_Period_Time_min> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Total Sleep Time min</span> <input type=text class=form-control name=Total_Sleep_Time_min> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Wake After Sleep Onset min</span> <input type=text class=form-control name=Wake_After_Sleep_Onset_min> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Sleep Efficiency Percent TIB</span> <input type=text class=form-control name=Sleep_Efficiency_Percent_TIB> </label> </div>
                             </div>
                             <hr>
-                            <div class="row px-4">
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Stage 3 (min)</span><input class='form-control' type='text' name='Stage_3_min' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Stage 3 %</span><input class='form-control' type='text' name='Stage_3_pct' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Stage 4 (min)</span><input class='form-control' type='text' name='Stage_4_min' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Stage 4 %</span><input class='form-control' type='text' name='Stage_4_pct' /></label></div>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Sleep Latency min</span> <input type=text class=form-control name=Sleep_Latency_min> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Sleep Latency min 10 Mins</span> <input type=text class=form-control name=Sleep_Latency_min_10_Mins> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>REM Latency min</span> <input type=text class=form-control name=REM_Latency_min> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>N1 Latency min</span> <input type=text class=form-control name=N1_Latency_min> </label> </div>
                             </div>
                             <hr>
-                            <div class="row px-4">
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Unsure sleep stage (min)</span><input class='form-control' type='text' name='Unsure_sleep_stage_min' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Total Number of Arousals</span><input class='form-control' type='text' name='Total_Number_of_Arousals' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Number of ARO RES Arousal 1</span><input class='form-control' type='text' name='Number_of_ARO_RES_Arousal_1' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Number of ARO Limb Arousal 2</span><input class='form-control' type='text' name='Number_of_ARO_Limb_Arousal_2' /></label></div>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>N2 Latency min</span> <input type=text class=form-control name=N2_Latency_min> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>N3 Latency min</span> <input type=text class=form-control name=N3_Latency_min> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>NREM min</span> <input type=text class=form-control name=NREM_min> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>NREM Percent TST</span> <input type=text class=form-control name=NREM_Percent_TST> </label> </div>
                             </div>
                             <hr>
-                            <div class="row px-4">
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Number of ARO SPONT Arousal 3</span><input class='form-control' type='text' name='Number_of_ARO_SPONT_Arousal_3' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Number of  Arousal 4</span><input class='form-control' type='text' name='Number_of__Arousal_4' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Number of  Arousal 5</span><input class='form-control' type='text' name='Number_of__Arousal_5' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Total Arousal Index TST (p/hr)</span><input class='form-control' type='text' name='Total_Arousal_Index_TST_p_hr' /></label></div>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>N1 min</span> <input type=text class=form-control name=N1_min> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>N1 Percent TST</span> <input type=text class=form-control name=N1_Percent_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>N2 min</span> <input type=text class=form-control name=N2_min> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>N2 Percent TST</span> <input type=text class=form-control name=N2_Percent_TST> </label> </div>
                             </div>
                             <hr>
-                            <div class="row px-4">
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >ARO RES Arousal 1 Index TST (p/hr)</span><input class='form-control' type='text' name='ARO_RES_Arousal_1_Index_TST_p_hr' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >ARO Limb Arousal 2 Index TST (p/hr)</span><input class='form-control' type='text' name='ARO_Limb_Arousal_2_Index_TST_p_hr' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >ARO SPONT Arousal 3 Index TST (p/hr)</span><input class='form-control' type='text' name='ARO_SPONT_Arousal_3_Index_TST_p_hr' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Arousal 4 Index TST (p/hr)</span><input class='form-control' type='text' name='Arousal_4_Index_TST_p_hr' /></label></div>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>N3 min</span> <input type=text class=form-control name=N3_min> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>N3 Percent TST</span> <input type=text class=form-control name=N3_Percent_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>REM min</span> <input type=text class=form-control name=REM_min> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>REM Percent TST</span> <input type=text class=form-control name=REM_Percent_TST> </label> </div>
                             </div>
                             <hr>
-                            <div class="row px-4">
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Arousal 5 Index TST (p/hr)</span><input class='form-control' type='text' name='Arousal_5_Index_TST_p_hr' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Total Arousal Index in REM (p/hr)</span><input class='form-control' type='text' name='Total_Arousal_Index_in_REM_p_hr' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >ARO RES Arousal 1 Index in REM (p/hr)</span><input class='form-control' type='text' name='ARO_RES_Arousal_1_Index_in_REM_p_hr' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >ARO Limb Arousal 2 Index in REM (p/hr)</span><input class='form-control' type='text' name='ARO_Limb_Arousal_2_Index_in_REM_p_hr' /></label></div>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>NREM min Supine TST</span> <input type=text class=form-control name=NREM_min_Supine_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>NREM Percent Supine TST</span> <input type=text class=form-control name=NREM_Percent_Supine_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>N1 Percent Supine TST</span> <input type=text class=form-control name=N1_Percent_Supine_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>N2 Percent Supine TST</span> <input type=text class=form-control name=N2_Percent_Supine_TST> </label> </div>
                             </div>
                             <hr>
-                            <div class="row px-4">
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >ARO SPONT Arousal 3 Index in REM (p/hr)</span><input class='form-control' type='text' name='ARO_SPONT_Arousal_3_Index_in_REM_p_hr' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Arousal 4 Index in REM (p/hr)</span><input class='form-control' type='text' name='Arousal_4_Index_in_REM_p_hr' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Arousal 5 Index in REM (p/hr)</span><input class='form-control' type='text' name='Arousal_5_Index_in_REM_p_hr' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Total Arousal Index in NREM (p/hr)</span><input class='form-control' type='text' name='Total_Arousal_Index_in_NREM_p_hr' /></label></div>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>N3 Percent Supine TST</span> <input type=text class=form-control name=N3_Percent_Supine_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>REM min Supine TST</span> <input type=text class=form-control name=REM_min_Supine_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>REM Percent Supine TST</span> <input type=text class=form-control name=REM_Percent_Supine_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>NREM min Nonsupine TST</span> <input type=text class=form-control name=NREM_min_Nonsupine_TST> </label> </div>
                             </div>
                             <hr>
-                            <div class="row px-4">
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >ARO RES Arousal 1 Index in NREM (p/hr)</span><input class='form-control' type='text' name='ARO_RES_Arousal_1_Index_in_NREM_p_hr' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >ARO Limb Arousal 2 Index in NREM (p/hr)</span><input class='form-control' type='text' name='ARO_Limb_Arousal_2_Index_in_NREM_p_hr' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >ARO SPONT Arousal 3 Index in NREM (p/hr)</span><input class='form-control' type='text' name='ARO_SPONT_Arousal_3_Index_in_NREM_p_hr' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Arousal 4 Index in NREM (p/hr)</span><input class='form-control' type='text' name='Arousal_4_Index_in_NREM_p_hr' /></label></div>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>NREM Percent Nonsupine TST</span> <input type=text class=form-control name=NREM_Percent_Nonsupine_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>N1 Percent Nonsupine TST</span> <input type=text class=form-control name=N1_Percent_Nonsupine_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>N2 Percent Nonsupine TST</span> <input type=text class=form-control name=N2_Percent_Nonsupine_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>N3 Percent Nonsupine TST</span> <input type=text class=form-control name=N3_Percent_Nonsupine_TST> </label> </div>
                             </div>
                             <hr>
-                            <div class="row px-4">
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Arousal 5 Index in NREM (p/hr)</span><input class='form-control' type='text' name='Arousal_5_Index_in_NREM_p_hr' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Central Apnea Average duration (sec)</span><input class='form-control' type='text' name='Central_Apnea_Average_duration_sec' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Central Apnea Total duration (min)</span><input class='form-control' type='text' name='Central_Apnea_Total_duration_min' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Central Apnea Total Number</span><input class='form-control' type='text' name='Central_Apnea_Total_Number' /></label></div>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>REM min Nonsupine TST</span> <input type=text class=form-control name=REM_min_Nonsupine_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>REM Percent Nonsupine TST</span> <input type=text class=form-control name=REM_Percent_Nonsupine_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Awakenings TST</span> <input type=text class=form-control name=Awakenings_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Arousal Index TST</span> <input type=text class=form-control name=Arousal_Index_TST> </label> </div>
                             </div>
                             <hr>
-                            <div class="row px-4">
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Central Apnea Index (p/hr)</span><input class='form-control' type='text' name='Central_Apnea_Index_p_hr' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Obstructive Apnea Average duration (sec)</span><input class='form-control' type='text' name='Obstructive_Apnea_Average_duration_sec' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Obstructive Apnea Total duration (min)</span><input class='form-control' type='text' name='Obstructive_Apnea_Total_duration_min' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Obstructive Apnea Total Number</span><input class='form-control' type='text' name='Obstructive_Apnea_Total_Number' /></label></div>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Arousal Index REM</span> <input type=text class=form-control name=Arousal_Index_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Arousal Index NREM</span> <input type=text class=form-control name=Arousal_Index_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Arousal Count TST</span> <input type=text class=form-control name=Arousal_Count_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Arousal Count REM</span> <input type=text class=form-control name=Arousal_Count_REM> </label> </div>
                             </div>
                             <hr>
-                            <div class="row px-4">
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Obstructive Apnea Index (p/hr)</span><input class='form-control' type='text' name='Obstructive_Apnea_Index_p_hr' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Hypopnea Average duration (sec)</span><input class='form-control' type='text' name='Hypopnea_Average_duration_sec' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Hypopnea Total duration (min)</span><input class='form-control' type='text' name='Hypopnea_Total_duration_min' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Hypopnea Total Number</span><input class='form-control' type='text' name='Hypopnea_Total_Number' /></label></div>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Arousal Count NREM</span> <input type=text class=form-control name=Arousal_Count_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Spon Arousals Index TST</span> <input type=text class=form-control name=Spon_Arousals_Index_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Spon Arousals Index REM</span> <input type=text class=form-control name=Spon_Arousals_Index_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Spon Arousals Index NREM</span> <input type=text class=form-control name=Spon_Arousals_Index_NREM> </label> </div>
                             </div>
                             <hr>
-                            <div class="row px-4">
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Hypopnea Index (p/hr)</span><input class='form-control' type='text' name='Hypopnea_Index_p_hr' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Chicago Hypopnea Average duration (sec)</span><input class='form-control' type='text' name='Chicago_Hypopnea_Average_duration_sec' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Chicago Hypopnea Total duration (min)</span><input class='form-control' type='text' name='Chicago_Hypopnea_Total_duration_min' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Chicago Hypopnea Total Number</span><input class='form-control' type='text' name='Chicago_Hypopnea_Total_Number' /></label></div>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Spon Arousal Count TST</span> <input type=text class=form-control name=Spon_Arousal_Count_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Spon Arousal Count REM</span> <input type=text class=form-control name=Spon_Arousal_Count_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Spon Arousal Count NREM</span> <input type=text class=form-control name=Spon_Arousal_Count_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Resp Arousals Index TST</span> <input type=text class=form-control name=Resp_Arousals_Index_TST> </label> </div>
                             </div>
                             <hr>
-                            <div class="row px-4">
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Chicago Hypopnea Index (p/hr)</span><input class='form-control' type='text' name='Chicago_Hypopnea_Index_p_hr' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Apnea + Hypopnea Average duration (sec)</span><input class='form-control' type='text' name='Apnea_+_Hypopnea_Average_duration_sec' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Apnea + Hypopnea Total duration (min)</span><input class='form-control' type='text' name='Apnea_+_Hypopnea_Total_duration_min' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Apnea + Hypopnea Total Number</span><input class='form-control' type='text' name='Apnea_+_Hypopnea_Total_Number' /></label></div>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Resp Arousals Index REM</span> <input type=text class=form-control name=Resp_Arousals_Index_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Resp Arousals Index NREM</span> <input type=text class=form-control name=Resp_Arousals_Index_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Resp Arousal Count TST</span> <input type=text class=form-control name=Resp_Arousal_Count_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Resp Arousal Count REM</span> <input type=text class=form-control name=Resp_Arousal_Count_REM> </label> </div>
                             </div>
                             <hr>
-                            <div class="row px-4">
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Apnea + Hypopnea Index (p/hr)</span><input class='form-control' type='text' name='Apnea_+_Hypopnea_Index_p_hr' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >SaO2% min average in back position (NREM)</span><input class='form-control' type='text' name='SaO2pct_min_average_in_back_position_NREM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >SaO2% min average in other position (NREM)</span><input class='form-control' type='text' name='SaO2pct_min_average_in_other_position_NREM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >SaO2% min average in all position (NREM)</span><input class='form-control' type='text' name='SaO2pct_min_average_in_all_position_NREM' /></label></div>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Resp Arousal Count NREM</span> <input type=text class=form-control name=Resp_Arousal_Count_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Arousals Index TST</span> <input type=text class=form-control name=RERA_Arousals_Index_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Arousals Index REM</span> <input type=text class=form-control name=RERA_Arousals_Index_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Arousals Index NREM</span> <input type=text class=form-control name=RERA_Arousals_Index_NREM> </label> </div>
                             </div>
                             <hr>
-                            <div class="row px-4">
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >SaO2% min average in back position (REM)</span><input class='form-control' type='text' name='SaO2pct_min_average_in_back_position_REM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >SaO2% min average in other position (REM)</span><input class='form-control' type='text' name='SaO2pct_min_average_in_other_position_REM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >SaO2% min average in all position (REM)</span><input class='form-control' type='text' name='SaO2pct_min_average_in_all_position_REM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >SaO2% lowest in back position (NREM)</span><input class='form-control' type='text' name='SaO2pct_lowest_in_back_position_NREM' /></label></div>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Arousal Count TST</span> <input type=text class=form-control name=RERA_Arousal_Count_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Arousal Count REM</span> <input type=text class=form-control name=RERA_Arousal_Count_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Arousal Count NREM</span> <input type=text class=form-control name=RERA_Arousal_Count_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Limb Arousals Index TST</span> <input type=text class=form-control name=Limb_Arousals_Index_TST> </label> </div>
                             </div>
                             <hr>
-                            <div class="row px-4">
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >SaO2% lowest in other position (NREM)</span><input class='form-control' type='text' name='SaO2pct_lowest_in_other_position_NREM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >SaO2% lowest in all position (NREM)</span><input class='form-control' type='text' name='SaO2pct_lowest_in_all_position_NREM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >SaO2% lowest in back position (REM)</span><input class='form-control' type='text' name='SaO2pct_lowest_in_back_position_REM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >SaO2% lowest in other position (REM)</span><input class='form-control' type='text' name='SaO2pct_lowest_in_other_position_REM' /></label></div>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Limb Arousals Index REM</span> <input type=text class=form-control name=Limb_Arousals_Index_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Limb Arousals Index NREM</span> <input type=text class=form-control name=Limb_Arousals_Index_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Limb Arousal Count TST</span> <input type=text class=form-control name=Limb_Arousal_Count_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Limb Arousal Count REM</span> <input type=text class=form-control name=Limb_Arousal_Count_REM> </label> </div>
                             </div>
                             <hr>
-                            <div class="row px-4">
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >SaO2% lowest in all position (REM)</span><input class='form-control' type='text' name='SaO2pct_lowest_in_all_position_REM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Total duration (min) Chicago Hypopnea in back position (NREM)</span><input class='form-control' type='text' name='Total_duration_min_Chicago_Hypopnea_in_back_position_NREM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Total duration (min) Chicago Hypopnea in other position (NREM)</span><input class='form-control' type='text' name='Total_duration_min_Chicago_Hypopnea_in_other_position_NREM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Total duration (min) Chicago Hypopnea in all position (NREM)</span><input class='form-control' type='text' name='Total_duration_min_Chicago_Hypopnea_in_all_position_NREM' /></label></div>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Limb Arousal Count NREM</span> <input type=text class=form-control name=Limb_Arousal_Count_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Central Apnea Count TST</span> <input type=text class=form-control name=Central_Apnea_Count_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Central Apnea Index TST</span> <input type=text class=form-control name=Central_Apnea_Index_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Obstructive Apnea Count TST</span> <input type=text class=form-control name=Obstructive_Apnea_Count_TST> </label> </div>
                             </div>
                             <hr>
-                            <div class="row px-4">
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Total duration (min) Chicago Hypopnea in back position (REM)</span><input class='form-control' type='text' name='Total_duration_min_Chicago_Hypopnea_in_back_position_REM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Total duration (min) Chicago Hypopnea in other position (REM)</span><input class='form-control' type='text' name='Total_duration_min_Chicago_Hypopnea_in_other_position_REM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Total duration (min) Chicago Hypopnea in all position (REM)</span><input class='form-control' type='text' name='Total_duration_min_Chicago_Hypopnea_in_all_position_REM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Total duration (min) Central Apnea in back position (NREM)</span><input class='form-control' type='text' name='Total_duration_min_Central_Apnea_in_back_position_NREM' /></label></div>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Obstructive Apnea Index TST</span> <input type=text class=form-control name=Obstructive_Apnea_Index_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Hypopnea Count TST</span> <input type=text class=form-control name=Hypopnea_Count_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Hypopnea Index TST</span> <input type=text class=form-control name=Hypopnea_Index_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Count TST</span> <input type=text class=form-control name=RERA_Count_TST> </label> </div>
                             </div>
                             <hr>
-                            <div class="row px-4">
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Total duration (min) Central Apnea in other position (NREM)</span><input class='form-control' type='text' name='Total_duration_min_Central_Apnea_in_other_position_NREM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Total duration (min) Central Apnea in all position (NREM)</span><input class='form-control' type='text' name='Total_duration_min_Central_Apnea_in_all_position_NREM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Total duration (min) Central Apnea in back position (REM)</span><input class='form-control' type='text' name='Total_duration_min_Central_Apnea_in_back_position_REM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Total duration (min) Central Apnea in other position (REM)</span><input class='form-control' type='text' name='Total_duration_min_Central_Apnea_in_other_position_REM' /></label></div>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Index TST</span> <input type=text class=form-control name=RERA_Index_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Apnea Hypopnea Index TST</span> <input type=text class=form-control name=Apnea_Hypopnea_Index_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Respiratory Disturbance Index TST</span> <input type=text class=form-control name=Respiratory_Disturbance_Index_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Central Apnea Count REM</span> <input type=text class=form-control name=Central_Apnea_Count_REM> </label> </div>
                             </div>
                             <hr>
-                            <div class="row px-4">
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Total duration (min) Central Apnea in all position (REM)</span><input class='form-control' type='text' name='Total_duration_min_Central_Apnea_in_all_position_REM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Total duration (min) Obstructive Apnea in back position (NREM)</span><input class='form-control' type='text' name='Total_duration_min_Obstructive_Apnea_in_back_position_NREM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Total duration (min) Obstructive Apnea in other position (NREM)</span><input class='form-control' type='text' name='Total_duration_min_Obstructive_Apnea_in_other_position_NREM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Total duration (min) Obstructive Apnea in all position (NREM)</span><input class='form-control' type='text' name='Total_duration_min_Obstructive_Apnea_in_all_position_NREM' /></label></div>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Central Apnea Index REM</span> <input type=text class=form-control name=Central_Apnea_Index_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Obstructive Apnea Count REM</span> <input type=text class=form-control name=Obstructive_Apnea_Count_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Obstructive Apnea Index REM</span> <input type=text class=form-control name=Obstructive_Apnea_Index_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Hypopnea Count REM</span> <input type=text class=form-control name=Hypopnea_Count_REM> </label> </div>
                             </div>
                             <hr>
-                            <div class="row px-4">
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Total duration (min) Obstructive Apnea in back position (REM)</span><input class='form-control' type='text' name='Total_duration_min_Obstructive_Apnea_in_back_position_REM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Total duration (min) Obstructive Apnea in other position (REM)</span><input class='form-control' type='text' name='Total_duration_min_Obstructive_Apnea_in_other_position_REM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Total duration (min) Obstructive Apnea in all position (REM)</span><input class='form-control' type='text' name='Total_duration_min_Obstructive_Apnea_in_all_position_REM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Total duration (min) Mixed Apnea in back position (NREM)</span><input class='form-control' type='text' name='Total_duration_min_Mixed_Apnea_in_back_position_NREM' /></label></div>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Hypopnea Index REM</span> <input type=text class=form-control name=Hypopnea_Index_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Count REM</span> <input type=text class=form-control name=RERA_Count_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Index REM</span> <input type=text class=form-control name=RERA_Index_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Apnea Hypopnea Index REM</span> <input type=text class=form-control name=Apnea_Hypopnea_Index_REM> </label> </div>
                             </div>
                             <hr>
-                            <div class="row px-4">
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Total duration (min) Mixed Apnea in other position (NREM)</span><input class='form-control' type='text' name='Total_duration_min_Mixed_Apnea_in_other_position_NREM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Total duration (min) Mixed Apnea in all position (NREM)</span><input class='form-control' type='text' name='Total_duration_min_Mixed_Apnea_in_all_position_NREM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Total duration (min) Mixed Apnea in back position (REM)</span><input class='form-control' type='text' name='Total_duration_min_Mixed_Apnea_in_back_position_REM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Total duration (min) Mixed Apnea in other position (REM)</span><input class='form-control' type='text' name='Total_duration_min_Mixed_Apnea_in_other_position_REM' /></label></div>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Respiratory Disturbance Index REM</span> <input type=text class=form-control name=Respiratory_Disturbance_Index_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Central Apnea Count NREM</span> <input type=text class=form-control name=Central_Apnea_Count_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Central Apnea Index NREM</span> <input type=text class=form-control name=Central_Apnea_Index_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Obstructive Apnea Count NREM</span> <input type=text class=form-control name=Obstructive_Apnea_Count_NREM> </label> </div>
                             </div>
                             <hr>
-                            <div class="row px-4">
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Total duration (min) Mixed Apnea in all position (REM)</span><input class='form-control' type='text' name='Total_duration_min_Mixed_Apnea_in_all_position_REM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Total duration (min) Hypopnea in back position (NREM)</span><input class='form-control' type='text' name='Total_duration_min_Hypopnea_in_back_position_NREM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Total duration (min) Hypopnea in other position (NREM)</span><input class='form-control' type='text' name='Total_duration_min_Hypopnea_in_other_position_NREM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Total duration (min) Hypopnea in all position (NREM)</span><input class='form-control' type='text' name='Total_duration_min_Hypopnea_in_all_position_NREM' /></label></div>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Obstructive Apnea Index NREM</span> <input type=text class=form-control name=Obstructive_Apnea_Index_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Hypopnea Count NREM</span> <input type=text class=form-control name=Hypopnea_Count_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Hypopnea Index NREM</span> <input type=text class=form-control name=Hypopnea_Index_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Count NREM</span> <input type=text class=form-control name=RERA_Count_NREM> </label> </div>
                             </div>
                             <hr>
-                            <div class="row px-4">
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Total duration (min) Hypopnea in back position (REM)</span><input class='form-control' type='text' name='Total_duration_min_Hypopnea_in_back_position_REM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Total duration (min) Hypopnea in other position (REM)</span><input class='form-control' type='text' name='Total_duration_min_Hypopnea_in_other_position_REM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Total duration (min) Hypopnea in all position (REM)</span><input class='form-control' type='text' name='Total_duration_min_Hypopnea_in_all_position_REM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Total duration (min) Apnea + Hypopnea in back position (NREM)</span><input class='form-control' type='text' name='Total_duration_min_Apnea_+_Hypopnea_in_back_position_NREM' /></label></div>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Index NREM</span> <input type=text class=form-control name=RERA_Index_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Apnea Hypopnea Index NREM</span> <input type=text class=form-control name=Apnea_Hypopnea_Index_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Respiratory Disturbance Index NREM</span> <input type=text class=form-control name=Respiratory_Disturbance_Index_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Central Apnea Count TST Supine</span> <input type=text class=form-control name=Central_Apnea_Count_TST_Supine> </label> </div>
                             </div>
                             <hr>
-                            <div class="row px-4">
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Total duration (min) Apnea + Hypopnea in other position (NREM)</span><input class='form-control' type='text' name='Total_duration_min_Apnea_+_Hypopnea_in_other_position_NREM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Total duration (min) Apnea + Hypopnea in all position (NREM)</span><input class='form-control' type='text' name='Total_duration_min_Apnea_+_Hypopnea_in_all_position_NREM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Total duration (min) Apnea + Hypopnea in back position (REM)</span><input class='form-control' type='text' name='Total_duration_min_Apnea_+_Hypopnea_in_back_position_REM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Total duration (min) Apnea + Hypopnea in other position (REM)</span><input class='form-control' type='text' name='Total_duration_min_Apnea_+_Hypopnea_in_other_position_REM' /></label></div>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Central Apnea Index TST Supine</span> <input type=text class=form-control name=Central_Apnea_Index_TST_Supine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Obstructive Apnea Count TST Supine</span> <input type=text class=form-control name=Obstructive_Apnea_Count_TST_Supine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Obstructive Apnea Index TST Supine</span> <input type=text class=form-control name=Obstructive_Apnea_Index_TST_Supine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Hypopnea Count TST Supine</span> <input type=text class=form-control name=Hypopnea_Count_TST_Supine> </label> </div>
                             </div>
                             <hr>
-                            <div class="row px-4">
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Total duration (min) Apnea + Hypopnea in all position (REM)</span><input class='form-control' type='text' name='Total_duration_min_Apnea_+_Hypopnea_in_all_position_REM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Index (p/hr) Chicago Hypopnea in back position (NREM)</span><input class='form-control' type='text' name='Index_p_hr_Chicago_Hypopnea_in_back_position_NREM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Index (p/hr) Chicago Hypopnea in other position (NREM)</span><input class='form-control' type='text' name='Index_p_hr_Chicago_Hypopnea_in_other_position_NREM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Index (p/hr) Chicago Hypopnea in all position (NREM)</span><input class='form-control' type='text' name='Index_p_hr_Chicago_Hypopnea_in_all_position_NREM' /></label></div>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Hypopnea Index TST Supine</span> <input type=text class=form-control name=Hypopnea_Index_TST_Supine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Count TST Supine</span> <input type=text class=form-control name=RERA_Count_TST_Supine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Index TST Supine</span> <input type=text class=form-control name=RERA_Index_TST_Supine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Apnea Hypopnea Index TST Supine</span> <input type=text class=form-control name=Apnea_Hypopnea_Index_TST_Supine> </label> </div>
                             </div>
                             <hr>
-                            <div class="row px-4">
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Index (p/hr) Chicago Hypopnea in back position (REM)</span><input class='form-control' type='text' name='Index_p_hr_Chicago_Hypopnea_in_back_position_REM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Index (p/hr) Chicago Hypopnea in other position (REM)</span><input class='form-control' type='text' name='Index_p_hr_Chicago_Hypopnea_in_other_position_REM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Index (p/hr) Chicago Hypopnea in all position (REM)</span><input class='form-control' type='text' name='Index_p_hr_Chicago_Hypopnea_in_all_position_REM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Index (p/hr) Central Apnea in back position (NREM)</span><input class='form-control' type='text' name='Index_p_hr_Central_Apnea_in_back_position_NREM' /></label></div>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Respiratory Disturbance Index TST Supine</span> <input type=text class=form-control name=Respiratory_Disturbance_Index_TST_Supine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Central Apnea Count REM Supine</span> <input type=text class=form-control name=Central_Apnea_Count_REM_Supine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Central Apnea Index REM Supine</span> <input type=text class=form-control name=Central_Apnea_Index_REM_Supine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Obstructive Apnea Count REM Supine</span> <input type=text class=form-control name=Obstructive_Apnea_Count_REM_Supine> </label> </div>
                             </div>
                             <hr>
-                            <div class="row px-4">
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Index (p/hr) Central Apnea in other position (NREM)</span><input class='form-control' type='text' name='Index_p_hr_Central_Apnea_in_other_position_NREM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Index (p/hr) Central Apnea in all position (NREM)</span><input class='form-control' type='text' name='Index_p_hr_Central_Apnea_in_all_position_NREM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Index (p/hr) Central Apnea in back position (REM)</span><input class='form-control' type='text' name='Index_p_hr_Central_Apnea_in_back_position_REM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Index (p/hr) Central Apnea in other position (REM)</span><input class='form-control' type='text' name='Index_p_hr_Central_Apnea_in_other_position_REM' /></label></div>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Obstructive Apnea Index REM Supine</span> <input type=text class=form-control name=Obstructive_Apnea_Index_REM_Supine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Hypopnea Count REM Supine</span> <input type=text class=form-control name=Hypopnea_Count_REM_Supine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Hypopnea Index REM Supine</span> <input type=text class=form-control name=Hypopnea_Index_REM_Supine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Count REM Supine</span> <input type=text class=form-control name=RERA_Count_REM_Supine> </label> </div>
                             </div>
                             <hr>
-                            <div class="row px-4">
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Index (p/hr) Central Apnea in all position (REM)</span><input class='form-control' type='text' name='Index_p_hr_Central_Apnea_in_all_position_REM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Index (p/hr) Obstructive Apnea in back position (NREM)</span><input class='form-control' type='text' name='Index_p_hr_Obstructive_Apnea_in_back_position_NREM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Index (p/hr) Obstructive Apnea in other position (NREM)</span><input class='form-control' type='text' name='Index_p_hr_Obstructive_Apnea_in_other_position_NREM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Index (p/hr) Obstructive Apnea in all position (NREM)</span><input class='form-control' type='text' name='Index_p_hr_Obstructive_Apnea_in_all_position_NREM' /></label></div>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Index REM Supine</span> <input type=text class=form-control name=RERA_Index_REM_Supine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Apnea Hypopnea Index REM Supine</span> <input type=text class=form-control name=Apnea_Hypopnea_Index_REM_Supine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Respiratory Disturbance Index REM Supine</span> <input type=text class=form-control name=Respiratory_Disturbance_Index_REM_Supine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Central Apnea Count NREM Supine</span> <input type=text class=form-control name=Central_Apnea_Count_NREM_Supine> </label> </div>
                             </div>
                             <hr>
-                            <div class="row px-4">
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Index (p/hr) Obstructive Apnea in back position (REM)</span><input class='form-control' type='text' name='Index_p_hr_Obstructive_Apnea_in_back_position_REM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Index (p/hr) Obstructive Apnea in other position (REM)</span><input class='form-control' type='text' name='Index_p_hr_Obstructive_Apnea_in_other_position_REM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Index (p/hr) Obstructive Apnea in all position (REM)</span><input class='form-control' type='text' name='Index_p_hr_Obstructive_Apnea_in_all_position_REM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Index (p/hr) Mixed Apnea in back position (NREM)</span><input class='form-control' type='text' name='Index_p_hr_Mixed_Apnea_in_back_position_NREM' /></label></div>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Central Apnea Index NREM Supine</span> <input type=text class=form-control name=Central_Apnea_Index_NREM_Supine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Obstructive Apnea Count NREM Supine</span> <input type=text class=form-control name=Obstructive_Apnea_Count_NREM_Supine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Obstructive Apnea Index NREM Supine</span> <input type=text class=form-control name=Obstructive_Apnea_Index_NREM_Supine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Hypopnea Count NREM Supine</span> <input type=text class=form-control name=Hypopnea_Count_NREM_Supine> </label> </div>
                             </div>
                             <hr>
-                            <div class="row px-4">
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Index (p/hr) Mixed Apnea in other position (NREM)</span><input class='form-control' type='text' name='Index_p_hr_Mixed_Apnea_in_other_position_NREM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Index (p/hr) Mixed Apnea in all position (NREM)</span><input class='form-control' type='text' name='Index_p_hr_Mixed_Apnea_in_all_position_NREM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Index (p/hr) Mixed Apnea in back position (REM)</span><input class='form-control' type='text' name='Index_p_hr_Mixed_Apnea_in_back_position_REM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Index (p/hr) Mixed Apnea in other position (REM)</span><input class='form-control' type='text' name='Index_p_hr_Mixed_Apnea_in_other_position_REM' /></label></div>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Hypopnea Index NREM Supine</span> <input type=text class=form-control name=Hypopnea_Index_NREM_Supine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Count NREM Supine</span> <input type=text class=form-control name=RERA_Count_NREM_Supine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Index NREM Supine</span> <input type=text class=form-control name=RERA_Index_NREM_Supine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Apnea Hypopnea Index NREM Supine</span> <input type=text class=form-control name=Apnea_Hypopnea_Index_NREM_Supine> </label> </div>
                             </div>
                             <hr>
-                            <div class="row px-4">
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Index (p/hr) Mixed Apnea in all position (REM)</span><input class='form-control' type='text' name='Index_p_hr_Mixed_Apnea_in_all_position_REM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Index (p/hr) Hypopnea in back position (NREM)</span><input class='form-control' type='text' name='Index_p_hr_Hypopnea_in_back_position_NREM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Index (p/hr) Hypopnea in other position (NREM)</span><input class='form-control' type='text' name='Index_p_hr_Hypopnea_in_other_position_NREM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Index (p/hr) Hypopnea in all position (NREM)</span><input class='form-control' type='text' name='Index_p_hr_Hypopnea_in_all_position_NREM' /></label></div>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Respiratory Disturbance Index NREM Supine</span> <input type=text class=form-control name=Respiratory_Disturbance_Index_NREM_Supine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Central Apnea Count TST NonSupine</span> <input type=text class=form-control name=Central_Apnea_Count_TST_NonSupine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Central Apnea Index TST NonSupine</span> <input type=text class=form-control name=Central_Apnea_Index_TST_NonSupine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Obstructive Apnea Count TST NonSupine</span> <input type=text class=form-control name=Obstructive_Apnea_Count_TST_NonSupine> </label> </div>
                             </div>
                             <hr>
-                            <div class="row px-4">
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Index (p/hr) Hypopnea in back position (REM)</span><input class='form-control' type='text' name='Index_p_hr_Hypopnea_in_back_position_REM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Index (p/hr) Hypopnea in other position (REM)</span><input class='form-control' type='text' name='Index_p_hr_Hypopnea_in_other_position_REM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Index (p/hr) Hypopnea in all position (REM)</span><input class='form-control' type='text' name='Index_p_hr_Hypopnea_in_all_position_REM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Index (p/hr) Apnea + Hypopnea in back position (NREM)</span><input class='form-control' type='text' name='Index_p_hr_Apnea_+_Hypopnea_in_back_position_NREM' /></label></div>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Obstructive Apnea Index TST NonSupine</span> <input type=text class=form-control name=Obstructive_Apnea_Index_TST_NonSupine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Hypopnea Count TST NonSupine</span> <input type=text class=form-control name=Hypopnea_Count_TST_NonSupine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Hypopnea Index TST NonSupine</span> <input type=text class=form-control name=Hypopnea_Index_TST_NonSupine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Count TST NonSupine</span> <input type=text class=form-control name=RERA_Count_TST_NonSupine> </label> </div>
                             </div>
                             <hr>
-                            <div class="row px-4">
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Index (p/hr) Apnea + Hypopnea in other position (NREM)</span><input class='form-control' type='text' name='Index_p_hr_Apnea_+_Hypopnea_in_other_position_NREM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Index (p/hr) Apnea + Hypopnea in all position (NREM)</span><input class='form-control' type='text' name='Index_p_hr_Apnea_+_Hypopnea_in_all_position_NREM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Index (p/hr) Apnea + Hypopnea in back position (REM)</span><input class='form-control' type='text' name='Index_p_hr_Apnea_+_Hypopnea_in_back_position_REM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Index (p/hr) Apnea + Hypopnea in other position (REM)</span><input class='form-control' type='text' name='Index_p_hr_Apnea_+_Hypopnea_in_other_position_REM' /></label></div>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Index TST NonSupine</span> <input type=text class=form-control name=RERA_Index_TST_NonSupine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Apnea Hypopnea Index TST NonSupine</span> <input type=text class=form-control name=Apnea_Hypopnea_Index_TST_NonSupine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Respiratory Disturbance Index TST NonSupine</span> <input type=text class=form-control name=Respiratory_Disturbance_Index_TST_NonSupine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Central Apnea Count REM NonSupine</span> <input type=text class=form-control name=Central_Apnea_Count_REM_NonSupine> </label> </div>
                             </div>
                             <hr>
-                            <div class="row px-4">
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Index (p/hr) Apnea + Hypopnea in all position (REM)</span><input class='form-control' type='text' name='Index_p_hr_Apnea_+_Hypopnea_in_all_position_REM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Sleep Time in back (min)</span><input class='form-control' type='text' name='Sleep_Time_in_back_min' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Sleep Time in non-back (min)</span><input class='form-control' type='text' name='Sleep_Time_in_non-back_min' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Time in REM on back (min)</span><input class='form-control' type='text' name='Time_in_REM_on_back_min' /></label></div>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Central Apnea Index REM NonSupine</span> <input type=text class=form-control name=Central_Apnea_Index_REM_NonSupine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Obstructive Apnea Count REM NonSupine</span> <input type=text class=form-control name=Obstructive_Apnea_Count_REM_NonSupine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Obstructive Apnea Index REM NonSupine</span> <input type=text class=form-control name=Obstructive_Apnea_Index_REM_NonSupine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Hypopnea Count REM NonSupine</span> <input type=text class=form-control name=Hypopnea_Count_REM_NonSupine> </label> </div>
                             </div>
                             <hr>
-                            <div class="row px-4">
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Time in NREM on back (min)</span><input class='form-control' type='text' name='Time_in_NREM_on_back_min' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Supine NREM RDI</span><input class='form-control' type='text' name='Supine_NREM_RDI' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Supine REM RDI</span><input class='form-control' type='text' name='Supine_REM_RDI' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Non-supine NREM RDI</span><input class='form-control' type='text' name='Non-supine_NREM_RDI' /></label></div>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Hypopnea Index REM NonSupine</span> <input type=text class=form-control name=Hypopnea_Index_REM_NonSupine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Count REM NonSupine</span> <input type=text class=form-control name=RERA_Count_REM_NonSupine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Index REM NonSupine</span> <input type=text class=form-control name=RERA_Index_REM_NonSupine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Apnea Hypopnea Index REM NonSupine</span> <input type=text class=form-control name=Apnea_Hypopnea_Index_REM_NonSupine> </label> </div>
                             </div>
                             <hr>
-                            <div class="row px-4">
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Non-supine REM RDI</span><input class='form-control' type='text' name='Non-supine_REM_RDI' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >NREM RDI</span><input class='form-control' type='text' name='NREM_RDI' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >REM RDI</span><input class='form-control' type='text' name='REM_RDI' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >TOTAL RDI</span><input class='form-control' type='text' name='TOTAL_RDI' /></label></div>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Respiratory Disturbance Index REM NonSupine</span> <input type=text class=form-control name=Respiratory_Disturbance_Index_REM_NonSupine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Central Apnea Count NREM NonSupine</span> <input type=text class=form-control name=Central_Apnea_Count_NREM_NonSupine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Central Apnea Index NREM NonSupine</span> <input type=text class=form-control name=Central_Apnea_Index_NREM_NonSupine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Obstructive Apnea Count NREM NonSupine</span> <input type=text class=form-control name=Obstructive_Apnea_Count_NREM_NonSupine> </label> </div>
                             </div>
                             <hr>
-                            <div class="row px-4">
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Total RDI without Chicago Hypopneas</span><input class='form-control' type='text' name='Total_RDI_without_Chicago_Hypopneas' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Minimum SaO2 desaturation (%)</span><input class='form-control' type='text' name='Minimum_SaO2_desaturation_pct' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >SaO2 awake average (%)</span><input class='form-control' type='text' name='SaO2_awake_average_pct' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Average SaO2 desaturation (%)</span><input class='form-control' type='text' name='Average_SaO2_desaturation_pct' /></label></div>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Obstructive Apnea Index NREM NonSupine</span> <input type=text class=form-control name=Obstructive_Apnea_Index_NREM_NonSupine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Hypopnea Count NREM NonSupine</span> <input type=text class=form-control name=Hypopnea_Count_NREM_NonSupine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Hypopnea Index NREM NonSupine</span> <input type=text class=form-control name=Hypopnea_Index_NREM_NonSupine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Count NREM NonSupine</span> <input type=text class=form-control name=RERA_Count_NREM_NonSupine> </label> </div>
                             </div>
                             <hr>
-                            <div class="row px-4">
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Mean Apnea / Hypopnea duration (sec)</span><input class='form-control' type='text' name='Mean_Apnea_/_Hypopnea_duration_sec' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Longest Apnea (sec)</span><input class='form-control' type='text' name='Longest_Apnea_sec' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Longest Hypopnea (sec)</span><input class='form-control' type='text' name='Longest_Hypopnea_sec' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >SaO2 time below 90%</span><input class='form-control' type='text' name='SaO2_time_below_90pct' /></label></div>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Index NREM NonSupine</span> <input type=text class=form-control name=RERA_Index_NREM_NonSupine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Apnea Hypopnea Index NREM NonSupine</span> <input type=text class=form-control name=Apnea_Hypopnea_Index_NREM_NonSupine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Respiratory Disturbance Index NREM NonSupine</span> <input type=text class=form-control name=Respiratory_Disturbance_Index_NREM_NonSupine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Mean apnea duration TST</span> <input type=text class=form-control name=Mean_apnea_duration_TST> </label> </div>
                             </div>
                             <hr>
-                            <div class="row px-4">
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >SaO2 time below 80%</span><input class='form-control' type='text' name='SaO2_time_below_80pct' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >SaO2 time below 75%</span><input class='form-control' type='text' name='SaO2_time_below_75pct' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >SaO2 time below 70%</span><input class='form-control' type='text' name='SaO2_time_below_70pct' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >SaO2 time below 60%</span><input class='form-control' type='text' name='SaO2_time_below_60pct' /></label></div>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Max apnea duration TST</span> <input type=text class=form-control name=Max_apnea_duration_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Mean apnea duration REM</span> <input type=text class=form-control name=Mean_apnea_duration_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Mean apnea duration NREM</span> <input type=text class=form-control name=Mean_apnea_duration_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Mean obstructive apnea duration TST</span> <input type=text class=form-control name=Mean_obstructive_apnea_duration_TST> </label> </div>
                             </div>
                             <hr>
-                            <div class="row px-4">
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Number of SaO2 desaturations greater than or equal to 3%</span><input class='form-control' type='text' name='Num_SaO2_desat_ge_3pct' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Number of SaO2 desaturations greater than or equal to 4%</span><input class='form-control' type='text' name='Num_SaO2_desat_ge_4pct' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Number of SaO2 desaturations greater than or equal to 5%</span><input class='form-control' type='text' name='Num_SaO2_desat_ge_5pct' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >ODI (>=3%)</span><input class='form-control' type='text' name='ODI_ge_3pct' /></label></div>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Mean obstructive apnea duration REM</span> <input type=text class=form-control name=Mean_obstructive_apnea_duration_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Mean obstructive apnea duration NREM</span> <input type=text class=form-control name=Mean_obstructive_apnea_duration_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Mean central apnea duration TST</span> <input type=text class=form-control name=Mean_central_apnea_duration_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Mean central apnea duration REM</span> <input type=text class=form-control name=Mean_central_apnea_duration_REM> </label> </div>
                             </div>
                             <hr>
-                            <div class="row px-4">
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Number of PLMs NREM</span><input class='form-control' type='text' name='Number_of_PLMs_NREM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Number of PLMs REM</span><input class='form-control' type='text' name='Number_of_PLMs_REM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >Number of PLM Total Sleep</span><input class='form-control' type='text' name='Number_of_PLM_Total_Sleep' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >PLM Index NREM</span><input class='form-control' type='text' name='PLM_Index_NREM' /></label></div>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Mean central apnea duration NREM</span> <input type=text class=form-control name=Mean_central_apnea_duration_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Mean mixed apnea duration TST</span> <input type=text class=form-control name=Mean_mixed_apnea_duration_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Mean hypopnea duration TST</span> <input type=text class=form-control name=Mean_hypopnea_duration_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Max hypopnea duration TST</span> <input type=text class=form-control name=Max_hypopnea_duration_TST> </label> </div>
                             </div>
                             <hr>
-                            <div class="row px-4">
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >PLM Index REM</span><input class='form-control' type='text' name='PLM_Index_REM' /></label></div>
-                                <div class='col-sm-12 col-lg-3'><label class=''><span class='' >PLM Index Total</span><input class='form-control' type='text' name='PLM_Index_Total' /></label></div>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 lessthan 70percent min TST</span> <input type=text class=form-control name=SpO2_lessthan_70percent_min_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 Percentage In Range 70 to 79 min TST</span> <input type=text class=form-control name=SpO2_Percentage_In_Range_70_to_79_min_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 lessthan 80percent min TST</span> <input type=text class=form-control name=SpO2_lessthan_80percent_min_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 Percentage In Range 80 to 89 min TST</span> <input type=text class=form-control name=SpO2_Percentage_In_Range_80_to_89_min_TST> </label> </div>
                             </div>
                             <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 lessthan 90percent min TST</span> <input type=text class=form-control name=SpO2_lessthan_90percent_min_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 Percentage In Range 90 to 100 min TST</span> <input type=text class=form-control name=SpO2_Percentage_In_Range_90_to_100_min_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 lessthan 70percent min REM</span> <input type=text class=form-control name=SpO2_lessthan_70percent_min_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 Percentage In Range 70 to 79 min REM</span> <input type=text class=form-control name=SpO2_Percentage_In_Range_70_to_79_min_REM> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 lessthan 80percent min REM</span> <input type=text class=form-control name=SpO2_lessthan_80percent_min_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 Percentage In Range 80 to 89 min REM</span> <input type=text class=form-control name=SpO2_Percentage_In_Range_80_to_89_min_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 lessthan 90percent min REM</span> <input type=text class=form-control name=SpO2_lessthan_90percent_min_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 Percentage In Range 90 to 100 min REM</span> <input type=text class=form-control name=SpO2_Percentage_In_Range_90_to_100_min_REM> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 lessthan 70percent min NREM</span> <input type=text class=form-control name=SpO2_lessthan_70percent_min_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 Percentage In Range 70 to 79 min NREM</span> <input type=text class=form-control name=SpO2_Percentage_In_Range_70_to_79_min_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 lessthan 80percent min NREM</span> <input type=text class=form-control name=SpO2_lessthan_80percent_min_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 Percentage In Range 80 to 89 min NREM</span> <input type=text class=form-control name=SpO2_Percentage_In_Range_80_to_89_min_NREM> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 lessthan 90percent min NREM</span> <input type=text class=form-control name=SpO2_lessthan_90percent_min_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 Percentage In Range 90 to 100 min NREM</span> <input type=text class=form-control name=SpO2_Percentage_In_Range_90_to_100_min_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 lessthan 70percent min WAKE</span> <input type=text class=form-control name=SpO2_lessthan_70percent_min_WAKE> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 Percentage In Range 70 to 79 min WAKE</span> <input type=text class=form-control name=SpO2_Percentage_In_Range_70_to_79_min_WAKE> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 lessthan 80percent min WAKE</span> <input type=text class=form-control name=SpO2_lessthan_80percent_min_WAKE> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 Percentage In Range 80 to 89 min WAKE</span> <input type=text class=form-control name=SpO2_Percentage_In_Range_80_to_89_min_WAKE> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 lessthan 90percent min WAKE</span> <input type=text class=form-control name=SpO2_lessthan_90percent_min_WAKE> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 Percentage In Range 90 to 100 min WAKE</span> <input type=text class=form-control name=SpO2_Percentage_In_Range_90_to_100_min_WAKE> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Mean SpO2 percent TIB</span> <input type=text class=form-control name=Mean_SpO2_percent_TIB> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Mean SpO2 percent TST</span> <input type=text class=form-control name=Mean_SpO2_percent_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Mean SpO2 percent Wake</span> <input type=text class=form-control name=Mean_SpO2_percent_Wake> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Mean SpO2 percent REM</span> <input type=text class=form-control name=Mean_SpO2_percent_REM> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Mean SpO2 percent NREM</span> <input type=text class=form-control name=Mean_SpO2_percent_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Min SpO2 percent TIB</span> <input type=text class=form-control name=Min_SpO2_percent_TIB> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Min SpO2 percent TST</span> <input type=text class=form-control name=Min_SpO2_percent_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Min SpO2 percent REM</span> <input type=text class=form-control name=Min_SpO2_percent_REM> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Min SpO2 percent NREM</span> <input type=text class=form-control name=Min_SpO2_percent_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>O2 Desat3percent Index TIB</span> <input type=text class=form-control name=O2_Desat3percent_Index_TIB> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>O2 Desat3percent Index TST</span> <input type=text class=form-control name=O2_Desat3percent_Index_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>O2 Desat3percent Index REM</span> <input type=text class=form-control name=O2_Desat3percent_Index_REM> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>O2 Desat3percent Index NREM</span> <input type=text class=form-control name=O2_Desat3percent_Index_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>O2 Desat3percent Index N1</span> <input type=text class=form-control name=O2_Desat3percent_Index_N1> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>O2 Desat3percent Index N2</span> <input type=text class=form-control name=O2_Desat3percent_Index_N2> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>O2 Desat3percent Index N3</span> <input type=text class=form-control name=O2_Desat3percent_Index_N3> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>O2 Desat3percent Count TIB</span> <input type=text class=form-control name=O2_Desat3percent_Count_TIB> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>O2 Desat3percent Count TST</span> <input type=text class=form-control name=O2_Desat3percent_Count_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>O2 Desat3percent Count REM</span> <input type=text class=form-control name=O2_Desat3percent_Count_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>O2 Desat3percent Count NREM</span> <input type=text class=form-control name=O2_Desat3percent_Count_NREM> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>O2 Desat4percent Index TIB</span> <input type=text class=form-control name=O2_Desat4percent_Index_TIB> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>O2 Desat4percent Index TST</span> <input type=text class=form-control name=O2_Desat4percent_Index_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>O2 Desat4percent Index REM</span> <input type=text class=form-control name=O2_Desat4percent_Index_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>O2 Desat4percent Index NREM</span> <input type=text class=form-control name=O2_Desat4percent_Index_NREM> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>O2 Desat4percent Index N1</span> <input type=text class=form-control name=O2_Desat4percent_Index_N1> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>O2 Desat4percent Index N2</span> <input type=text class=form-control name=O2_Desat4percent_Index_N2> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>O2 Desat4percent Index N3</span> <input type=text class=form-control name=O2_Desat4percent_Index_N3> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>O2 Desat4percent Count TIB</span> <input type=text class=form-control name=O2_Desat4percent_Count_TIB> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>O2 Desat4percent Count TST</span> <input type=text class=form-control name=O2_Desat4percent_Count_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>O2 Desat4percent Count REM</span> <input type=text class=form-control name=O2_Desat4percent_Count_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>O2 Desat4percent Count NREM</span> <input type=text class=form-control name=O2_Desat4percent_Count_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Limb Movement Count TST</span> <input type=text class=form-control name=Limb_Movement_Count_TST> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Limb Movement Index TST</span> <input type=text class=form-control name=Limb_Movement_Index_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Limb Movement Count NREM</span> <input type=text class=form-control name=Limb_Movement_Count_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Limb Movement Index NREM</span> <input type=text class=form-control name=Limb_Movement_Index_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Limb Movement Count REM</span> <input type=text class=form-control name=Limb_Movement_Count_REM> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Limb Movement Index REM</span> <input type=text class=form-control name=Limb_Movement_Index_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>PLM Series Count TST</span> <input type=text class=form-control name=PLM_Series_Count_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>PLM Series Index TST</span> <input type=text class=form-control name=PLM_Series_Index_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>PeriodicLimb Movement Count TST</span> <input type=text class=form-control name=PeriodicLimb_Movement_Count_TST> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>PeriodicLimb Movement Index TST</span> <input type=text class=form-control name=PeriodicLimb_Movement_Index_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>PeriodicLimb Movement Count NREM</span> <input type=text class=form-control name=PeriodicLimb_Movement_Count_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>PeriodicLimb Movement Index NREM</span> <input type=text class=form-control name=PeriodicLimb_Movement_Index_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>PeriodicLimb Movement Count REM</span> <input type=text class=form-control name=PeriodicLimb_Movement_Count_REM> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>PeriodicLimb Movement Index REM</span> <input type=text class=form-control name=PeriodicLimb_Movement_Index_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Mean PR TST</span> <input type=text class=form-control name=Mean_PR_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Mean PR REM</span> <input type=text class=form-control name=Mean_PR_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Mean PR NREM</span> <input type=text class=form-control name=Mean_PR_NREM> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Min PR TST</span> <input type=text class=form-control name=Min_PR_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Min PR REM</span> <input type=text class=form-control name=Min_PR_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Min PR NREM</span> <input type=text class=form-control name=Min_PR_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Max PR TST</span> <input type=text class=form-control name=Max_PR_TST> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Max PR REM</span> <input type=text class=form-control name=Max_PR_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Max PR NREM</span> <input type=text class=form-control name=Max_PR_NREM> </label> </div> 
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -380,226 +511,87 @@
     </div>
     VmInclude:__COMPONENT__/m/model.01.html
     <script>
-        //---------------------------------------------
         function F__ID() {
             //-------------------------------------
             VmInclude: '__COMPONENT__/f/form.01.js'
-            VmInclude: __CURRENT_PATH__/shared-form.js
-            //-------------------------------------
-            var load2 = m.load;
-            m.load = function () {
-                load2();
-                if (m.input.readonly != undefined) $('#submit__ID').hide();
-                //render_file_field_v2(m.input.record,'__ID',$('#File_Name__ID'));
-                m.set_file_link("File_Name");
-            }
+            VmInclude: '__CURRENT_PATH__/shared-form.js'
             //-------------------------------------
             $('#F__ID input[name=File_Name]').on('change', function (evt) {
                 if (this.files.length == 1) {
                     file_process(this.files[0])
                 }
-            })
+            });
+            function parseVariableName(str) {
+                if (str == undefined) {
+                    return
+                }
+                str = str.replace(/[^\w\s]/gi, ''); // String may not contain special characters
+                str = str.trim(); // Trim any <space> characters from start or end of string
+                str = str.replace(/^\d+\s*/, ''); // String cannot start with numbers
+                str = str.split(' ').join('_'); // Join any remaining bits of string with underscores
+                return str;
+            }
             //-------------------------------------
+            // File reader function
             var file_process = function (file) {
+                // Create a new file reader and on loading a file -> run
                 var reader = new FileReader();
                 reader.onload = (function (e) {
+                    ///////////////////////////////////////////////////////////////////////////////
+                    // MANUAL EDIT REQUIRED HERE 
+                    // Specify whether the variabels are listed as rows (false) or as columns (true)
+                    // Specify the delimiter
+                    var columnWise = false;
+                    var delimiter = '=';
+                    // Get contents
                     var contents = e.target.result;
-                    var lines = contents.replace(/"/g, '').replace(/\r/, '\n').replace(/\n\n/, '\n').split('\n');
-                    for (i = 0; i < lines.length; i++) {
-                        var row = lines[i].split(/=/);
-                        switch (row[0].trim()) {
-                            case 'Date of Birth': $('input[name="Date_of_Birth"]').val(row[1]);break;
-                            case 'Gender': $('input[name="Gender"]').val(row[1]);break;
-                            case 'MRN': $('input[name="MRN"]').val(row[1]);break;
-                            case 'Study Date': $('input[name="Study_Date"]').val(row[1]);break;
-                            case 'Study Start Time': $('input[name="Study_Start_Time"]').val(row[1]);break;
-                            case 'Study End Time': $('input[name="Study_End_Time"]').val(row[1]);break;
-                            case 'Time in Bed (min)': $('input[name="Time_in_Bed_min"]').val(row[1]);break;
-                            case 'Sleep Latency (min)': $('input[name="Sleep_Latency_min"]').val(row[1]);break;
-                            case 'REM Latency (min)': $('input[name="REM_Latency_min"]').val(row[1]);break;
-                            case 'Sleep Efficiency (%)': $('input[name="Sleep_Efficiency_pct"]').val(row[1]);break;
-                            case 'Total Time Awake During Sleep Period (min)': $('input[name="Total_Time_Awake_During_Sleep_Period_min"]').val(row[1]);break;
-                            case 'Total Sleep Time (min)': $('input[name="Total_Sleep_Time_min"]').val(row[1]);break;
-                            case 'NREM (min)': $('input[name="NREM_min"]').val(row[1]);break;
-                            case 'NREM %': $('input[name="NREM_pct"]').val(row[1]);break;
-                            case 'REM (min)': $('input[name="REM_min"]').val(row[1]);break;
-                            case 'REM %': $('input[name="REM_pct"]').val(row[1]);break;
-                            case 'Stage 1 (min)': $('input[name="Stage_1_min"]').val(row[1]);break;
-                            case 'Stage 1 %': $('input[name="Stage_1_pct"]').val(row[1]);break;
-                            case 'Stage 2 (min)': $('input[name="Stage_2_min"]').val(row[1]);break;
-                            case 'Stage 2 %': $('input[name="Stage_2_pct"]').val(row[1]);break;
-                            case 'Stage 3 (min)': $('input[name="Stage_3_min"]').val(row[1]);break;
-                            case 'Stage 3 %': $('input[name="Stage_3_pct"]').val(row[1]);break;
-                            case 'Stage 4 (min)': $('input[name="Stage_4_min"]').val(row[1]);break;
-                            case 'Stage 4 %': $('input[name="Stage_4_pct"]').val(row[1]);break;
-                            case 'Unsure sleep stage (min)': $('input[name="Unsure_sleep_stage_min"]').val(row[1]);break;
-                            case 'Total Number of Arousals': $('input[name="Total_Number_of_Arousals"]').val(row[1]);break;
-                            case 'Number of ARO RES Arousal 1': $('input[name="Number_of_ARO_RES_Arousal_1"]').val(row[1]);break;
-                            case 'Number of ARO Limb Arousal 2': $('input[name="Number_of_ARO_Limb_Arousal_2"]').val(row[1]);break;
-                            case 'Number of ARO SPONT Arousal 3': $('input[name="Number_of_ARO_SPONT_Arousal_3"]').val(row[1]);break;
-                            case 'Number of  Arousal 4': $('input[name="Number_of__Arousal_4"]').val(row[1]);break;
-                            case 'Number of  Arousal 5': $('input[name="Number_of__Arousal_5"]').val(row[1]);break;
-                            case 'Total Arousal Index TST (p/hr)': $('input[name="Total_Arousal_Index_TST_p_hr"]').val(row[1]);break;
-                            case 'ARO RES Arousal 1 Index TST (p/hr)': $('input[name="ARO_RES_Arousal_1_Index_TST_p_hr"]').val(row[1]);break;
-                            case 'ARO Limb Arousal 2 Index TST (p/hr)': $('input[name="ARO_Limb_Arousal_2_Index_TST_p_hr"]').val(row[1]);break;
-                            case 'ARO SPONT Arousal 3 Index TST (p/hr)': $('input[name="ARO_SPONT_Arousal_3_Index_TST_p_hr"]').val(row[1]);break;
-                            case 'Arousal 4 Index TST (p/hr)': $('input[name="Arousal_4_Index_TST_p_hr"]').val(row[1]);break;
-                            case 'Arousal 5 Index TST (p/hr)': $('input[name="Arousal_5_Index_TST_p_hr"]').val(row[1]);break;
-                            case 'Total Arousal Index in REM (p/hr)': $('input[name="Total_Arousal_Index_in_REM_p_hr"]').val(row[1]);break;
-                            case 'ARO RES Arousal 1 Index in REM (p/hr)': $('input[name="ARO_RES_Arousal_1_Index_in_REM_p_hr"]').val(row[1]);break;
-                            case 'ARO Limb Arousal 2 Index in REM (p/hr)': $('input[name="ARO_Limb_Arousal_2_Index_in_REM_p_hr"]').val(row[1]);break;
-                            case 'ARO SPONT Arousal 3 Index in REM (p/hr)': $('input[name="ARO_SPONT_Arousal_3_Index_in_REM_p_hr"]').val(row[1]);break;
-                            case 'Arousal 4 Index in REM (p/hr)': $('input[name="Arousal_4_Index_in_REM_p_hr"]').val(row[1]);break;
-                            case 'Arousal 5 Index in REM (p/hr)': $('input[name="Arousal_5_Index_in_REM_p_hr"]').val(row[1]);break;
-                            case 'Total Arousal Index in NREM (p/hr)': $('input[name="Total_Arousal_Index_in_NREM_p_hr"]').val(row[1]);break;
-                            case 'ARO RES Arousal 1 Index in NREM (p/hr)': $('input[name="ARO_RES_Arousal_1_Index_in_NREM_p_hr"]').val(row[1]);break;
-                            case 'ARO Limb Arousal 2 Index in NREM (p/hr)': $('input[name="ARO_Limb_Arousal_2_Index_in_NREM_p_hr"]').val(row[1]);break;
-                            case 'ARO SPONT Arousal 3 Index in NREM (p/hr)': $('input[name="ARO_SPONT_Arousal_3_Index_in_NREM_p_hr"]').val(row[1]);break;
-                            case 'Arousal 4 Index in NREM (p/hr)': $('input[name="Arousal_4_Index_in_NREM_p_hr"]').val(row[1]);break;
-                            case 'Arousal 5 Index in NREM (p/hr)': $('input[name="Arousal_5_Index_in_NREM_p_hr"]').val(row[1]);break;
-                            case 'Central Apnea Average duration (sec)': $('input[name="Central_Apnea_Average_duration_sec"]').val(row[1]);break;
-                            case 'Central Apnea Total duration (min)': $('input[name="Central_Apnea_Total_duration_min"]').val(row[1]);break;
-                            case 'Central Apnea Total Number': $('input[name="Central_Apnea_Total_Number"]').val(row[1]);break;
-                            case 'Central Apnea Index (p/hr)': $('input[name="Central_Apnea_Index_p_hr"]').val(row[1]);break;
-                            case 'Obstructive Apnea Average duration (sec)': $('input[name="Obstructive_Apnea_Average_duration_sec"]').val(row[1]);break;
-                            case 'Obstructive Apnea Total duration (min)': $('input[name="Obstructive_Apnea_Total_duration_min"]').val(row[1]);break;
-                            case 'Obstructive Apnea Total Number': $('input[name="Obstructive_Apnea_Total_Number"]').val(row[1]);break;
-                            case 'Obstructive Apnea Index (p/hr)': $('input[name="Obstructive_Apnea_Index_p_hr"]').val(row[1]);break;
-                            case 'Hypopnea Average duration (sec)': $('input[name="Hypopnea_Average_duration_sec"]').val(row[1]);break;
-                            case 'Hypopnea Total duration (min)': $('input[name="Hypopnea_Total_duration_min"]').val(row[1]);break;
-                            case 'Hypopnea Total Number': $('input[name="Hypopnea_Total_Number"]').val(row[1]);break;
-                            case 'Hypopnea Index (p/hr)': $('input[name="Hypopnea_Index_p_hr"]').val(row[1]);break;
-                            case 'Chicago Hypopnea Average duration (sec)': $('input[name="Chicago_Hypopnea_Average_duration_sec"]').val(row[1]);break;
-                            case 'Chicago Hypopnea Total duration (min)': $('input[name="Chicago_Hypopnea_Total_duration_min"]').val(row[1]);break;
-                            case 'Chicago Hypopnea Total Number': $('input[name="Chicago_Hypopnea_Total_Number"]').val(row[1]);break;
-                            case 'Chicago Hypopnea Index (p/hr)': $('input[name="Chicago_Hypopnea_Index_p_hr"]').val(row[1]);break;
-                            case 'Apnea + Hypopnea Average duration (sec)': $('input[name="Apnea_+_Hypopnea_Average_duration_sec"]').val(row[1]);break;
-                            case 'Apnea + Hypopnea Total duration (min)': $('input[name="Apnea_+_Hypopnea_Total_duration_min"]').val(row[1]);break;
-                            case 'Apnea + Hypopnea Total Number': $('input[name="Apnea_+_Hypopnea_Total_Number"]').val(row[1]);break;
-                            case 'Apnea + Hypopnea Index (p/hr)': $('input[name="Apnea_+_Hypopnea_Index_p_hr"]').val(row[1]);break;
-                            case 'SaO2% min average in back position (NREM)': $('input[name="SaO2pct_min_average_in_back_position_NREM"]').val(row[1]);break;
-                            case 'SaO2% min average in other position (NREM)': $('input[name="SaO2pct_min_average_in_other_position_NREM"]').val(row[1]);break;
-                            case 'SaO2% min average in all position (NREM)': $('input[name="SaO2pct_min_average_in_all_position_NREM"]').val(row[1]);break;
-                            case 'SaO2% min average in back position (REM)': $('input[name="SaO2pct_min_average_in_back_position_REM"]').val(row[1]);break;
-                            case 'SaO2% min average in other position (REM)': $('input[name="SaO2pct_min_average_in_other_position_REM"]').val(row[1]);break;
-                            case 'SaO2% min average in all position (REM)': $('input[name="SaO2pct_min_average_in_all_position_REM"]').val(row[1]);break;
-                            case 'SaO2% lowest in back position (NREM)': $('input[name="SaO2pct_lowest_in_back_position_NREM"]').val(row[1]);break;
-                            case 'SaO2% lowest in other position (NREM)': $('input[name="SaO2pct_lowest_in_other_position_NREM"]').val(row[1]);break;
-                            case 'SaO2% lowest in all position (NREM)': $('input[name="SaO2pct_lowest_in_all_position_NREM"]').val(row[1]);break;
-                            case 'SaO2% lowest in back position (REM)': $('input[name="SaO2pct_lowest_in_back_position_REM"]').val(row[1]);break;
-                            case 'SaO2% lowest in other position (REM)': $('input[name="SaO2pct_lowest_in_other_position_REM"]').val(row[1]);break;
-                            case 'SaO2% lowest in all position (REM)': $('input[name="SaO2pct_lowest_in_all_position_REM"]').val(row[1]);break;
-                            case 'Total duration (min) Chicago Hypopnea in back position (NREM)': $('input[name="Total_duration_min_Chicago_Hypopnea_in_back_position_NREM"]').val(row[1]);break;
-                            case 'Total duration (min) Chicago Hypopnea in other position (NREM)': $('input[name="Total_duration_min_Chicago_Hypopnea_in_other_position_NREM"]').val(row[1]);break;
-                            case 'Total duration (min) Chicago Hypopnea in all position (NREM)': $('input[name="Total_duration_min_Chicago_Hypopnea_in_all_position_NREM"]').val(row[1]);break;
-                            case 'Total duration (min) Chicago Hypopnea in back position (REM)': $('input[name="Total_duration_min_Chicago_Hypopnea_in_back_position_REM"]').val(row[1]);break;
-                            case 'Total duration (min) Chicago Hypopnea in other position (REM)': $('input[name="Total_duration_min_Chicago_Hypopnea_in_other_position_REM"]').val(row[1]);break;
-                            case 'Total duration (min) Chicago Hypopnea in all position (REM)': $('input[name="Total_duration_min_Chicago_Hypopnea_in_all_position_REM"]').val(row[1]);break;
-                            case 'Total duration (min) Central Apnea in back position (NREM)': $('input[name="Total_duration_min_Central_Apnea_in_back_position_NREM"]').val(row[1]);break;
-                            case 'Total duration (min) Central Apnea in other position (NREM)': $('input[name="Total_duration_min_Central_Apnea_in_other_position_NREM"]').val(row[1]);break;
-                            case 'Total duration (min) Central Apnea in all position (NREM)': $('input[name="Total_duration_min_Central_Apnea_in_all_position_NREM"]').val(row[1]);break;
-                            case 'Total duration (min) Central Apnea in back position (REM)': $('input[name="Total_duration_min_Central_Apnea_in_back_position_REM"]').val(row[1]);break;
-                            case 'Total duration (min) Central Apnea in other position (REM)': $('input[name="Total_duration_min_Central_Apnea_in_other_position_REM"]').val(row[1]);break;
-                            case 'Total duration (min) Central Apnea in all position (REM)': $('input[name="Total_duration_min_Central_Apnea_in_all_position_REM"]').val(row[1]);break;
-                            case 'Total duration (min) Obstructive Apnea in back position (NREM)': $('input[name="Total_duration_min_Obstructive_Apnea_in_back_position_NREM"]').val(row[1]);break;
-                            case 'Total duration (min) Obstructive Apnea in other position (NREM)': $('input[name="Total_duration_min_Obstructive_Apnea_in_other_position_NREM"]').val(row[1]);break;
-                            case 'Total duration (min) Obstructive Apnea in all position (NREM)': $('input[name="Total_duration_min_Obstructive_Apnea_in_all_position_NREM"]').val(row[1]);break;
-                            case 'Total duration (min) Obstructive Apnea in back position (REM)': $('input[name="Total_duration_min_Obstructive_Apnea_in_back_position_REM"]').val(row[1]);break;
-                            case 'Total duration (min) Obstructive Apnea in other position (REM)': $('input[name="Total_duration_min_Obstructive_Apnea_in_other_position_REM"]').val(row[1]);break;
-                            case 'Total duration (min) Obstructive Apnea in all position (REM)': $('input[name="Total_duration_min_Obstructive_Apnea_in_all_position_REM"]').val(row[1]);break;
-                            case 'Total duration (min) Mixed Apnea in back position (NREM)': $('input[name="Total_duration_min_Mixed_Apnea_in_back_position_NREM"]').val(row[1]);break;
-                            case 'Total duration (min) Mixed Apnea in other position (NREM)': $('input[name="Total_duration_min_Mixed_Apnea_in_other_position_NREM"]').val(row[1]);break;
-                            case 'Total duration (min) Mixed Apnea in all position (NREM)': $('input[name="Total_duration_min_Mixed_Apnea_in_all_position_NREM"]').val(row[1]);break;
-                            case 'Total duration (min) Mixed Apnea in back position (REM)': $('input[name="Total_duration_min_Mixed_Apnea_in_back_position_REM"]').val(row[1]);break;
-                            case 'Total duration (min) Mixed Apnea in other position (REM)': $('input[name="Total_duration_min_Mixed_Apnea_in_other_position_REM"]').val(row[1]);break;
-                            case 'Total duration (min) Mixed Apnea in all position (REM)': $('input[name="Total_duration_min_Mixed_Apnea_in_all_position_REM"]').val(row[1]);break;
-                            case 'Total duration (min) Hypopnea in back position (NREM)': $('input[name="Total_duration_min_Hypopnea_in_back_position_NREM"]').val(row[1]);break;
-                            case 'Total duration (min) Hypopnea in other position (NREM)': $('input[name="Total_duration_min_Hypopnea_in_other_position_NREM"]').val(row[1]);break;
-                            case 'Total duration (min) Hypopnea in all position (NREM)': $('input[name="Total_duration_min_Hypopnea_in_all_position_NREM"]').val(row[1]);break;
-                            case 'Total duration (min) Hypopnea in back position (REM)': $('input[name="Total_duration_min_Hypopnea_in_back_position_REM"]').val(row[1]);break;
-                            case 'Total duration (min) Hypopnea in other position (REM)': $('input[name="Total_duration_min_Hypopnea_in_other_position_REM"]').val(row[1]);break;
-                            case 'Total duration (min) Hypopnea in all position (REM)': $('input[name="Total_duration_min_Hypopnea_in_all_position_REM"]').val(row[1]);break;
-                            case 'Total duration (min) Apnea + Hypopnea in back position (NREM)': $('input[name="Total_duration_min_Apnea_+_Hypopnea_in_back_position_NREM"]').val(row[1]);break;
-                            case 'Total duration (min) Apnea + Hypopnea in other position (NREM)': $('input[name="Total_duration_min_Apnea_+_Hypopnea_in_other_position_NREM"]').val(row[1]);break;
-                            case 'Total duration (min) Apnea + Hypopnea in all position (NREM)': $('input[name="Total_duration_min_Apnea_+_Hypopnea_in_all_position_NREM"]').val(row[1]);break;
-                            case 'Total duration (min) Apnea + Hypopnea in back position (REM)': $('input[name="Total_duration_min_Apnea_+_Hypopnea_in_back_position_REM"]').val(row[1]);break;
-                            case 'Total duration (min) Apnea + Hypopnea in other position (REM)': $('input[name="Total_duration_min_Apnea_+_Hypopnea_in_other_position_REM"]').val(row[1]);break;
-                            case 'Total duration (min) Apnea + Hypopnea in all position (REM)': $('input[name="Total_duration_min_Apnea_+_Hypopnea_in_all_position_REM"]').val(row[1]);break;
-                            case 'Index (p/hr) Chicago Hypopnea in back position (NREM)': $('input[name="Index_p_hr_Chicago_Hypopnea_in_back_position_NREM"]').val(row[1]);break;
-                            case 'Index (p/hr) Chicago Hypopnea in other position (NREM)': $('input[name="Index_p_hr_Chicago_Hypopnea_in_other_position_NREM"]').val(row[1]);break;
-                            case 'Index (p/hr) Chicago Hypopnea in all position (NREM)': $('input[name="Index_p_hr_Chicago_Hypopnea_in_all_position_NREM"]').val(row[1]);break;
-                            case 'Index (p/hr) Chicago Hypopnea in back position (REM)': $('input[name="Index_p_hr_Chicago_Hypopnea_in_back_position_REM"]').val(row[1]);break;
-                            case 'Index (p/hr) Chicago Hypopnea in other position (REM)': $('input[name="Index_p_hr_Chicago_Hypopnea_in_other_position_REM"]').val(row[1]);break;
-                            case 'Index (p/hr) Chicago Hypopnea in all position (REM)': $('input[name="Index_p_hr_Chicago_Hypopnea_in_all_position_REM"]').val(row[1]);break;
-                            case 'Index (p/hr) Central Apnea in back position (NREM)': $('input[name="Index_p_hr_Central_Apnea_in_back_position_NREM"]').val(row[1]);break;
-                            case 'Index (p/hr) Central Apnea in other position (NREM)': $('input[name="Index_p_hr_Central_Apnea_in_other_position_NREM"]').val(row[1]);break;
-                            case 'Index (p/hr) Central Apnea in all position (NREM)': $('input[name="Index_p_hr_Central_Apnea_in_all_position_NREM"]').val(row[1]);break;
-                            case 'Index (p/hr) Central Apnea in back position (REM)': $('input[name="Index_p_hr_Central_Apnea_in_back_position_REM"]').val(row[1]);break;
-                            case 'Index (p/hr) Central Apnea in other position (REM)': $('input[name="Index_p_hr_Central_Apnea_in_other_position_REM"]').val(row[1]);break;
-                            case 'Index (p/hr) Central Apnea in all position (REM)': $('input[name="Index_p_hr_Central_Apnea_in_all_position_REM"]').val(row[1]);break;
-                            case 'Index (p/hr) Obstructive Apnea in back position (NREM)': $('input[name="Index_p_hr_Obstructive_Apnea_in_back_position_NREM"]').val(row[1]);break;
-                            case 'Index (p/hr) Obstructive Apnea in other position (NREM)': $('input[name="Index_p_hr_Obstructive_Apnea_in_other_position_NREM"]').val(row[1]);break;
-                            case 'Index (p/hr) Obstructive Apnea in all position (NREM)': $('input[name="Index_p_hr_Obstructive_Apnea_in_all_position_NREM"]').val(row[1]);break;
-                            case 'Index (p/hr) Obstructive Apnea in back position (REM)': $('input[name="Index_p_hr_Obstructive_Apnea_in_back_position_REM"]').val(row[1]);break;
-                            case 'Index (p/hr) Obstructive Apnea in other position (REM)': $('input[name="Index_p_hr_Obstructive_Apnea_in_other_position_REM"]').val(row[1]);break;
-                            case 'Index (p/hr) Obstructive Apnea in all position (REM)': $('input[name="Index_p_hr_Obstructive_Apnea_in_all_position_REM"]').val(row[1]);break;
-                            case 'Index (p/hr) Mixed Apnea in back position (NREM)': $('input[name="Index_p_hr_Mixed_Apnea_in_back_position_NREM"]').val(row[1]);break;
-                            case 'Index (p/hr) Mixed Apnea in other position (NREM)': $('input[name="Index_p_hr_Mixed_Apnea_in_other_position_NREM"]').val(row[1]);break;
-                            case 'Index (p/hr) Mixed Apnea in all position (NREM)': $('input[name="Index_p_hr_Mixed_Apnea_in_all_position_NREM"]').val(row[1]);break;
-                            case 'Index (p/hr) Mixed Apnea in back position (REM)': $('input[name="Index_p_hr_Mixed_Apnea_in_back_position_REM"]').val(row[1]);break;
-                            case 'Index (p/hr) Mixed Apnea in other position (REM)': $('input[name="Index_p_hr_Mixed_Apnea_in_other_position_REM"]').val(row[1]);break;
-                            case 'Index (p/hr) Mixed Apnea in all position (REM)': $('input[name="Index_p_hr_Mixed_Apnea_in_all_position_REM"]').val(row[1]);break;
-                            case 'Index (p/hr) Hypopnea in back position (NREM)': $('input[name="Index_p_hr_Hypopnea_in_back_position_NREM"]').val(row[1]);break;
-                            case 'Index (p/hr) Hypopnea in other position (NREM)': $('input[name="Index_p_hr_Hypopnea_in_other_position_NREM"]').val(row[1]);break;
-                            case 'Index (p/hr) Hypopnea in all position (NREM)': $('input[name="Index_p_hr_Hypopnea_in_all_position_NREM"]').val(row[1]);break;
-                            case 'Index (p/hr) Hypopnea in back position (REM)': $('input[name="Index_p_hr_Hypopnea_in_back_position_REM"]').val(row[1]);break;
-                            case 'Index (p/hr) Hypopnea in other position (REM)': $('input[name="Index_p_hr_Hypopnea_in_other_position_REM"]').val(row[1]);break;
-                            case 'Index (p/hr) Hypopnea in all position (REM)': $('input[name="Index_p_hr_Hypopnea_in_all_position_REM"]').val(row[1]);break;
-                            case 'Index (p/hr) Apnea + Hypopnea in back position (NREM)': $('input[name="Index_p_hr_Apnea_+_Hypopnea_in_back_position_NREM"]').val(row[1]);break;
-                            case 'Index (p/hr) Apnea + Hypopnea in other position (NREM)': $('input[name="Index_p_hr_Apnea_+_Hypopnea_in_other_position_NREM"]').val(row[1]);break;
-                            case 'Index (p/hr) Apnea + Hypopnea in all position (NREM)': $('input[name="Index_p_hr_Apnea_+_Hypopnea_in_all_position_NREM"]').val(row[1]);break;
-                            case 'Index (p/hr) Apnea + Hypopnea in back position (REM)': $('input[name="Index_p_hr_Apnea_+_Hypopnea_in_back_position_REM"]').val(row[1]);break;
-                            case 'Index (p/hr) Apnea + Hypopnea in other position (REM)': $('input[name="Index_p_hr_Apnea_+_Hypopnea_in_other_position_REM"]').val(row[1]);break;
-                            case 'Index (p/hr) Apnea + Hypopnea in all position (REM)': $('input[name="Index_p_hr_Apnea_+_Hypopnea_in_all_position_REM"]').val(row[1]);break;
-                            case 'Sleep Time in back (min)': $('input[name="Sleep_Time_in_back_min"]').val(row[1]);break;
-                            case 'Sleep Time in non-back (min)': $('input[name="Sleep_Time_in_non-back_min"]').val(row[1]);break;
-                            case 'Time in REM on back (min)': $('input[name="Time_in_REM_on_back_min"]').val(row[1]);break;
-                            case 'Time in NREM on back (min)': $('input[name="Time_in_NREM_on_back_min"]').val(row[1]);break;
-                            case 'Supine NREM RDI': $('input[name="Supine_NREM_RDI"]').val(row[1]);break;
-                            case 'Supine REM RDI': $('input[name="Supine_REM_RDI"]').val(row[1]);break;
-                            case 'Non-supine NREM RDI': $('input[name="Non-supine_NREM_RDI"]').val(row[1]);break;
-                            case 'Non-supine REM RDI': $('input[name="Non-supine_REM_RDI"]').val(row[1]);break;
-                            case 'NREM RDI': $('input[name="NREM_RDI"]').val(row[1]);break;
-                            case 'REM RDI': $('input[name="REM_RDI"]').val(row[1]);break;
-                            case 'TOTAL RDI': $('input[name="TOTAL_RDI"]').val(row[1]);break;
-                            case 'Total RDI without Chicago Hypopneas': $('input[name="Total_RDI_without_Chicago_Hypopneas"]').val(row[1]);break;
-                            case 'Minimum SaO2 desaturation (%)': $('input[name="Minimum_SaO2_desaturation_pct"]').val(row[1]);break;
-                            case 'SaO2 awake average (%)': $('input[name="SaO2_awake_average_pct"]').val(row[1]);break;
-                            case 'Average SaO2 desaturation (%)': $('input[name="Average_SaO2_desaturation_pct"]').val(row[1]);break;
-                            case 'Mean Apnea / Hypopnea duration (sec)': $('input[name="Mean_Apnea_/_Hypopnea_duration_sec"]').val(row[1]);break;
-                            case 'Longest Apnea (sec)': $('input[name="Longest_Apnea_sec"]').val(row[1]);break;
-                            case 'Longest Hypopnea (sec)': $('input[name="Longest_Hypopnea_sec"]').val(row[1]);break;
-                            case 'SaO2 time below 90%': $('input[name="SaO2_time_below_90pct"]').val(row[1]);break;
-                            case 'SaO2 time below 80%': $('input[name="SaO2_time_below_80pct"]').val(row[1]);break;
-                            case 'SaO2 time below 75%': $('input[name="SaO2_time_below_75pct"]').val(row[1]);break;
-                            case 'SaO2 time below 70%': $('input[name="SaO2_time_below_70pct"]').val(row[1]);break;
-                            case 'SaO2 time below 60%': $('input[name="SaO2_time_below_60pct"]').val(row[1]);break;
-                            case 'Number of SaO2 desaturations greater than or equal to 3%': $('input[name="Num_SaO2_desat_ge_3pct"]').val(row[1]);break;
-                            case 'Number of SaO2 desaturations greater than or equal to 4%': $('input[name="Num_SaO2_desat_ge_4pct"]').val(row[1]);break;
-                            case 'Number of SaO2 desaturations greater than or equal to 5%': $('input[name="Num_SaO2_desat_ge_5pct"]').val(row[1]);break;
-                            case 'ODI (>': $('input[name="ODI_ge_3pct"]').val(row[2]);break;
-                            case 'Number of PLMs NREM': $('input[name="Number_of_PLMs_NREM"]').val(row[1]);break;
-                            case 'Number of PLMs REM': $('input[name="Number_of_PLMs_REM"]').val(row[1]);break;
-                            case 'Number of PLM Total Sleep': $('input[name="Number_of_PLM_Total_Sleep"]').val(row[1]);break;
-                            case 'PLM Index NREM': $('input[name="PLM_Index_NREM"]').val(row[1]);break;
-                            case 'PLM Index REM': $('input[name="PLM_Index_REM"]').val(row[1]);break;
-                            case 'PLM Index Total': $('input[name="PLM_Index_Total"]').val(row[1]);break;
+                    // Split the contents into rows based on the new-line character '\n'
+                    var rows = contents.replace(/"/g, '').replace(/\r/, '\n').replace(/\n\n/, '\n').split(
+                        '\n');
+                    // Extract the data
+                    if (columnWise) { // Column-wise
+                        for (var r = 0; r < rows.length; r++) {
+                            // The first row contains all variable names
+                            if (r == 0) {
+                                var varNames = rows[r].split(delimiter);
+                                // Replace any <space> or other special character
+                                for (v = 0; v < varNames.length; v++) {
+                                    varNames[v] = parseVariableName(varNames[v]);
+                                }
+                            } else {
+                                // The subsequent rows contains the values
+                                var varValues = rows[r].split(delimiter);
+                            }
+                        }
+                    } else { // Row-wise
+                        // Initialize the varNames and varValue arrays
+                        var varNames = Array();
+                        var varValues = Array();
+                        // For each row, extract the variable name and value, and store in the form-input field.
+                        for (var r = 0; r < rows.length; r++) {
+                            // Split the variable name and value pair based on the delimiter
+                            var row = rows[r].split(delimiter);
+                            // If it did not find a pair, continue
+                            if (row.length == 1) {
+                                continue
+                            };
+                            varNames.push(parseVariableName(row[0]));
+                            varValues.push(row[1]);
                         }
                     }
+                    // Store the value of each variable in the form-input field
+                    for (var v = 0; v < varNames.length; v++) {
+                        $('#F__ID input[name="' + varNames[v] + '"]').val(varValues[v]);
+                    }
+                    console.log(varNames.join());
                 });
                 reader.readAsText(file);
             }
-            //-------------------------------------
+            var old_load = m.load;
+            m.load = function () {
+                old_load();
+                m.set_file_link("File_Name");
+            }
         }
     </script>
     <style>
