@@ -36,9 +36,9 @@
         "sdm-ii-g-lifestyle-data":		            {url:"$A/modules/lifestyle-data.html",Table:"sdm-ii-g-lifestyle",form_module:"sdm-ii-g-lifestyle-form"},
         "sdm-ii-g-lifestyle-form":		            {url:"$A/modules/lifestyle-form.html",Table:"sdm-ii-g-lifestyle"},
         "sdm-ii-g-education-data":		            {url:"$A/modules/education-data.html",Table:"sdm-ii-g-education",form_module:"sdm-ii-g-education-form"},
-        "sdm-ii-g-education-form":		            {url:"$A/modules/education-form.html",Table:"sdm-ii-b-education"},
+        "sdm-ii-g-education-form":		            {url:"$A/modules/education-form.html",Table:"sdm-ii-g-education"},
         "sdm-ii-g-medical-history-data":		            {url:"$A/modules/medical-history-data.html",Table:"sdm-ii-g-medical-history",form_module:"sdm-ii-g-medical-history-form"},
-        "sdm-ii-g-medical-history-form":		            {url:"$A/modules/medical-history-form.html",Table:"sdm-ii-b-medical-history"},
+        "sdm-ii-g-medical-history-form":		            {url:"$A/modules/medical-history-form.html",Table:"sdm-ii-g-medical-history"},
 
         "sdm-ii-u-snt-data":		            {url:"$A/modules/snt-data.html",Table:"sdm-ii-u-snt",form_module:"sdm-ii-u-snt-form"},
         "sdm-ii-u-snt-form":		            {url:"$A/modules/snt-form.html",Table:"sdm-ii-u-snt"},
