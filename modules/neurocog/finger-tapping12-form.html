@@ -53,53 +53,48 @@
 			var tt=data.Tapping_Time.split(',');
             var m=data.Match.split(',');
             var sn=data.Sequence_Number.split(',');
-            var k=0;
-            var correct=true;
-            var group=0;
-            var speed=[];
-            var acc=[];
-            for (var i=0;i<6;i++) {speed[i]=0;acc[i]=0;}
-            for(var i=0;i<tt.length;i++){
-                if(parseInt(sn[i])-1!=k){
-                    group=0;
-                    correct=true;
-                }
-                k=parseInt(sn[i])-1;
-                speed[k]++;
-                if(m[i]=="N") correct=false;
-                group++
-                if(group==5){
-                    group=0;
-                    if(correct==false) acc[k]++;
-                    correct=true;
-                }
-            }
-            data.Speed_1=speed[0];
-            data.Speed_2=speed[1];
-            data.Speed_3=speed[2];
-            data.Speed_4=speed[3];
-            data.Speed_5=speed[4];
-            data.Speed_6=speed[5];
-            data.Accuracy_1=acc[0]
-            data.Accuracy_2=acc[1]
-            data.Accuracy_3=acc[2]
-            data.Accuracy_4=acc[3]
-            data.Accuracy_5=acc[4]
-            data.Accuracy_6=acc[5]
-			/*
-            data.Speed_1=Math.floor(speed[0]/5);
-            data.Speed_2=Math.floor(speed[1]/5);
-            data.Speed_3=Math.floor(speed[2]/5);
-            data.Speed_4=Math.floor(speed[3]/5);
-            data.Speed_5=Math.floor(speed[4]/5);
-            data.Speed_6=Math.floor(speed[5]/5);
-            data.Accuracy_1=(acc[0]/Math.floor(speed[0]/5)).toFixed(2);
-            data.Accuracy_2=(acc[1]/Math.floor(speed[1]/5)).toFixed(2);
-            data.Accuracy_3=(acc[2]/Math.floor(speed[2]/5)).toFixed(2);
-            data.Accuracy_4=(acc[3]/Math.floor(speed[3]/5)).toFixed(2);
-            data.Accuracy_5=(acc[4]/Math.floor(speed[4]/5)).toFixed(2);
-            data.Accuracy_6=(acc[5]/Math.floor(speed[5]/5)).toFixed(2);
-			*/
+			var k=0;
+                    var check=true;
+                    var group=0;
+                    var timing=0;
+                    var correct=[];
+                    var error=[];
+                    var time=[];
+                    var pos=0;
+                    for (var i=1;i<13;i++) {
+                        var r_sn = sn.filter(pp => pp ==i);
+                        var r_tt=tt.slice(pos,pos+parseInt(r_sn.length));
+                        var r_m=m.slice(pos,pos+parseInt(r_sn.length));
+                        var err=0;
+                        var cor=0;
+                        var tim=0;
+                        for(var j=0;j<parseInt(r_sn.length);j++){
+                            var rr_m=r_m.slice(j,(j+1));
+                            var rr_tt=r_tt.slice(j,(j+1));
+                            var c=rr_m.filter(pp => pp =='N')
+                            if(c.length>0) err++;
+                            else {
+                                cor++;
+                                tim+=parseInt(rr_tt);
+                            }
+                        }
+                        error.push(err);
+                        correct.push(cor);
+                        time.push((tim/cor/1000).toFixed(2));
+                        pos+=r_sn.length;
+                    }
+                    data.Correct_1=correct[0];data.Error_1=error[0];data.Time_1=time[0];
+                    data.Correct_2=correct[1];data.Error_2=error[1];data.Time_2=time[1];
+                    data.Correct_3=correct[2];data.Error_3=error[2];data.Time_3=time[2];
+                    data.Correct_4=correct[3];data.Error_4=error[3];data.Time_4=time[3];
+                    data.Correct_5=correct[4];data.Error_5=error[4];data.Time_5=time[4];
+                    data.Correct_6=correct[5];data.Error_6=error[5];data.Time_6=time[5];
+                    data.Correct_7=correct[6];data.Error_7=error[6];data.Time_7=time[6];
+                    data.Correct_8=correct[7];data.Error_8=error[7];data.Time_8=time[7];
+                    data.Correct_9=correct[8];data.Error_9=error[8];data.Time_9=time[8];
+                    data.Correct_10=correct[9];data.Error_10=error[9];data.Time_10=time[9];
+                    data.Correct_11=correct[10];data.Error_11=error[10];data.Time_11=time[10];
+                    data.Correct_12=correct[11];data.Error_12=error[11];data.Time_12=time[11];
 		}
 		//------------------------------------
 		var ClearIntervals = function()
@@ -144,12 +139,12 @@
 			var canvas = document.getElementById('main_canvas');
 			var ctx = canvas.getContext('2d');
 
-			var repeats = 6;
+			var repeats = 12;
 			var predelaytime = 5000;
 			var predelaytext = "Please be ready. The task will start shortly.";
 			var postdelaytime = 25000;
 			var postdelaytext = "Relax for a while.";
-			var timelimit = 90000;
+			var timelimit = 30000;
 			//var cleardelaytime=50;
 			var repeat = 0
 
@@ -205,10 +200,8 @@
 					if (currentNumber >= sequence.length)
 					{
 						results.Match.push(sequenceMatch);
-//						results.Tapping_Time.push(Date.now() - startTime + cleardelaytime);
 						results.Tapping_Time.push(Date.now() - startTime);
 						results.Sequence_Number.push(repeat);
-//						setTimeout(ResetSequence,cleardelaytime); //Added by Gunnar
 						ResetSequence();
 					}
 				}
