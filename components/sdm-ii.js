@@ -72,16 +72,16 @@
 
         "sdm-ii-e-pvt-data":		            {url:"$A/modules/pvt-data.html",Table:"sdm-ii-e-pvt",form_module:"sdm-ii-e-pvt-form"},
         "sdm-ii-e-pvt-form":		            {url:"$A/modules/pvt-form.html",Table:"sdm-ii-e-pvt"},
-        "sdm-ii-e-finger-tapping12-data":		{url:"$A/modules/neurocog/finger-tapping12-data.html",Table:"sdm-ii-e-ftt",form_module:"sdm-ii-e-finger-tapping12-form"},
-        "sdm-ii-e-finger-tapping12-form":		{url:"$A/modules/neurocog/finger-tapping12-form.html",Table:"sdm-ii-e-ftt",task_name:"Finger Tapping Task 12 mins"},
+        "sdm-ii-e-finger-tapping12-data":		{url:"$A/modules/neurocog/finger-tapping12-before-data.html",Table:"sdm-ii-e-ftt",form_module:"sdm-ii-e-finger-tapping12-form"},
+        "sdm-ii-e-finger-tapping12-form":		{url:"$A/modules/neurocog/finger-tapping12-before-form.html",Table:"sdm-ii-e-ftt",task_name:"Finger Tapping Task 12 mins"},
 
         "sdm-ii-m-kss-data":		            {url:"$A/modules/kss-data.html",Table:"sdm-ii-m-kss",form_module:"sdm-ii-m-kss-form"},
         "sdm-ii-m-kss-form":		            {url:"$A/modules/kss-form.html",Table:"sdm-ii-m-kss",task_name:"Karolinska Sleepiness Scale (KSS)"},
 
         "sdm-ii-m-pvt-data":		            {url:"$A/modules/pvt-data.html",Table:"sdm-ii-m-pvt",form_module:"sdm-ii-m-pvt-form"},
         "sdm-ii-m-pvt-form":		            {url:"$A/modules/pvt-form.html",Table:"sdm-ii-m-pvt"},
-        "sdm-ii-m-finger-tapping-data":		    {url:"$A/modules/neurocog/finger-tapping-data.html",Table:"sdm-ii-m-ftt",form_module:"sdm-ii-m-finger-tapping-form"},
-        "sdm-ii-m-finger-tapping-form":		    {url:"$A/modules/neurocog/finger-tapping-form.html",Table:"sdm-ii-m-ftt",task_name:"Finger Tapping Task 6 Mins"},
+        "sdm-ii-m-finger-tapping-data":		    {url:"$A/modules/neurocog/finger-tapping6-after-data.html",Table:"sdm-ii-m-ftt",form_module:"sdm-ii-m-finger-tapping-form"},
+        "sdm-ii-m-finger-tapping-form":		    {url:"$A/modules/neurocog/finger-tapping6-after-form.html",Table:"sdm-ii-m-ftt",task_name:"Finger Tapping Task 6 Mins"},
 
         "sdm-ii-e-wordpair-set1-practice":	    {url:"$A//modules/word-pairs/evening-wordpairs-set1-practice.html"},
         "sdm-ii-e-wordpair-set1-trial1":	    {url:"$A/modules/word-pairs/evening-wordpairs-set1-trial1.html"},
