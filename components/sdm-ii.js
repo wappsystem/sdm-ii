@@ -40,8 +40,10 @@
         "sdm-ii-g-medical-history-data":		{url:"$A/modules/medical-history-data.html",Table:"sdm-ii-g-medical-history",form_module:"sdm-ii-g-medical-history-form"},
         "sdm-ii-g-medical-history-form":		{url:"$A/modules/medical-history-form.html",Table:"sdm-ii-g-medical-history"},
 
-        "sdm-ii-u-snt-data":		            {url:"$A/modules/snt-data.html",Table:"sdm-ii-u-snt",form_module:"sdm-ii-u-snt-form"},
-        "sdm-ii-u-snt-form":		            {url:"$A/modules/snt-form.html",Table:"sdm-ii-u-snt"},
+        "sdm-ii-u-snte-data":		            {url:"$A/modules/upload-file-data.html",Table:"sdm-ii-u-snte",form_module:"sdm-ii-u-snte-form",task_name:"Spacial Navigation Task Evening"},
+        "sdm-ii-u-snte-form":		            {url:"$A/modules/upload-file-form.html",Table:"sdm-ii-u-snte",task_name:"Spacial Navigation Task Evening"},
+        "sdm-ii-u-sntm-data":		            {url:"$A/modules/upload-file-data.html",Table:"sdm-ii-u-sntm",form_module:"sdm-ii-u-sntm-form",task_name:"Spacial Navigation Task Morning"},
+        "sdm-ii-u-sntm-form":		            {url:"$A/modules/upload-file-form.html",Table:"sdm-ii-u-sntm",task_name:"Spacial Navigation Task Morning"},
         "sdm-ii-u-smt-data":		            {url:"$A/modules/smt-data.html",Table:"sdm-ii-u-smt",form_module:"sdm-ii-u-smt-form"},
         "sdm-ii-u-smt-form":		            {url:"$A/modules/smt-form.html",Table:"sdm-ii-u-smt"},
         "sdm-ii-u-wpte-data":		            {url:"$A/modules/wpt-data.html",Table:"sdm-ii-u-wpte",form_module:"sdm-ii-u-wpte-form"},
@@ -96,8 +98,6 @@
         "sdm-ii-e-wordpair-set2-trial3":	    {url:"$A/modules/word-pairs/evening-wordpairs-set2-trial3.html"},
         "sdm-ii-e-wordpair-set2-trial4":	    {url:"$A/modules/word-pairs/evening-wordpairs-set2-trial4.html"},
         "sdm-ii-e-wordpair-set2-trial5":	    {url:"$A/modules/word-pairs/evening-wordpairs-set2-trial5.html"},
-
-
 
         "sdm-ii-m-wordpair-set1":	            {url:"$A//modules/word-pairs/morning-wordpairs-set1.html"},
         "sdm-ii-m-wordpair-set2":	            {url:"$A/modules/word-pairs/morning-wordpairs-set2.html"},
